@@ -32,7 +32,6 @@ The repository is organized as follows:
 /docs          - Thesis documents (drafts, final versions, etc.)
 /code          - Scripts and code related to the project
 /references    - Research papers, articles, and other references
-/notes         - Meeting notes and brainstorming ideas
 ```
 
 ## How to Use
@@ -44,4 +43,4 @@ The repository is organized as follows:
 
 If you have any questions or need clarification, feel free to reach out to me.
 
-Thank you for your collaboration and support!  
+Thank you for your collaboration and support!
