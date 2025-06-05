@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%
+% Copyright and authorship: Fernando Oleo Blanco.
+%
+% Thanks to all the people that helped me get to where I am.
+% Free use, just acknowledge the authors.
+%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper]{book} % General document definition. In order to have the text completely centered, do not use the twoside option; however, twoside is recommended for printing.
+
+% For general information and help, refer to https://www.overleaf.com/learn
+
+%% PACKAGES
+
+\usepackage[utf8]{inputenc} % Set the utf8 input encoding
+\usepackage[spanish]{babel} % Select your prefered language. Example: \usepackage[activeacute,spanish]{babel}
+\usepackage{amsmath, amsfonts, amssymb} % Mathematical notation
+\usepackage{fancyhdr} % Header and footer customization
+\setlength{\headheight}{16pt} % Increase headheight to avoid fancyhdr warnings
+\usepackage{titlesec} % Section printing customization
+\usepackage{graphicx} % Graphics import and tools
+\usepackage{color} % To use colors in the document
+\usepackage{geometry} % To modify the geometry of pages (margins and other lengths)
+\usepackage{hyperref} % "Advance" and easier referencing
+\usepackage{listings} % To add and format code. See https://www.overleaf.com/learn/latex/Using_listings_to_format_source_code for more information
+\usepackage{csquotes} % Recommended for biblatex with babel/polyglossia
+\usepackage{xcolor} % Adds more colors to the available list
+\usepackage[final]{pdfpages} % Includes pdfs directly, not as images
+\usepackage{lipsum} % Dummy text to test the design
+\usepackage[backend=biber,
+			style=numeric,
+			citestyle=numeric,
+			sorting=none]{biblatex}
+		% Citation configuration. We use biblatex, which is more
+        % complex, but as customizable as it gets.
+        % Please, modify this to your liking.
+        % IMPORTANT: this requires biber to be installed and run every time
+        % you change the .bib file! To make it easier, if you are using TeXStudio, do the following:
+        % 1. Go to options. 2. Select the Build menu. 3 In standard bibliography, change bibtex to biber. 4. Profit
+        % These changes will allow the editor to detect any changes and "recompile" the files if needed.
+        % For other editors see: https://tex.stackexchange.com/questions/154751/biblatex-with-biber-configuring-my-editor-to-avoid-undefined-citations
+       	% See link for a quick introduction: https://tex.stackexchange.com/questions/26516/how-to-use-biber/34136
+        % If you are having issues with the bibliography, please, search for how to install and run biber!
+        
+% Specialised packages
+\usepackage{tikz} % To create diagrams and figures
+\usetikzlibrary{shapes, arrows, positioning, calc} % Tikz libraries for shapes and arrows
+\usepackage{tikz-qtree} % To create trees with Tikz
+\usepackage{pgfplotstable} % To create tables with Tikz
+\usepackage{pgfplots} % Create native LaTeX looking plots (other backends are available)
+\pgfplotsset{compat=1.18} % Set pgfplots compatibility version
+\usepackage{todonotes} % Graphically create TODO entries
+\usepackage{pgfplots} % Create native LaTeX looking plots (other backends are available)
+\usepackage{todonotes} % Graphically create TODO entries
+\usepackage{siunitx} % Write Units in accordance with the SI organization
+\usepackage{eurosym} % Official Euro symbol
+\usepackage{caption} % To customize captions
+\usepackage{subcaption} % To create subcaptions for figures and tables
+\usepackage{float} % To control the placement of figures and tables
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{pifont}
+\usepackage{booktabs} % To create better tables
+\usepackage{longtable} % To create tables that span multiple pages
+\usepackage{multirow} % To create multirow cells in tables
+\usepackage{enumitem} % To customize lists
+\usepackage{setspace} % To set the line spacing
+\usepackage{microtype} % To improve the typography of the document
+\usepackage{array}
+%% PACKAGE CONFIGURATION
+
+% Bibliography resource
+\addbibresource{main.bib}
+
+% Header and footer customization
+\fancyhf{}
+\fancyhead[LE]{\slshape \leftmark}
+\fancyhead[RO]{\slshape \nouppercase \rightmark}
+\fancyfoot[LE, RO]{\thepage}
+% IMPORTANT! If your chapter/section names are too long to nicely fit on the header, use the shortened variant:
+% \chapter[short tile]{actual long title} or \section[short title]{actual long title, title}
+
+%% CUSTOM COMMANDS
+
+% Add abstract environment to book style
+\newenvironment{abstract}%
+{\cleardoublepage \null \vfill \begin{center}%
+		\bfseries \abstractname \end{center}}%
+{\vfill\null}
+
+%% DOCUMENT
+
+\begin{document}
+	
+	\frontmatter % First few pages
+	\pagestyle{empty} % We suppress the "fancy" hearders in the front matter
+	
+	% This creates a basic title page based on the one proposed by Comillas University.
+	\begin{titlepage}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.3\linewidth]{LogoUniversidadBN}
+		\end{figure}
+		\centering
+		\Large Grado en Ingeniería en Tecnologías de Telecomunicación \\ % Modify accordingly
+		\vspace*{2.5em} % This just adds some vertical spacing
+		\centering
+		Trabajo fin de grado \\ % Modify accordingly
+		\vspace*{1em}
+		IA GENERATIVA PARA LA PREDICCIÓN Y GESTIÓN DE LA DEMANDA ENERGÉTICA % Write here the title of your study
+		\\ \large
+		\vspace*{3em}
+		Autor \\ Álvaro González Tabernero \\ % Your name
+		\vspace*{1em}
+		Directores \\ Francisco Martín Martínez \\ Jaime Boal Martín-Larrauri % Supervisor(s) name(s) 
+		% {\vfill \vspace*{3em}{Author's signature:\hrulefill \hfill} \hfill \\ \vspace*{4em}Supervisors' signatures:\hrulefill \hfill} % Uncoment this line if you would like to add a signature space
+		\vfill
+		Madrid \\
+		Junio 2025 % Modify accordingly
+	\end{titlepage}
+	% Write your abstract
+	\begin{abstract}
+		Abstract content
+	\end{abstract}
+
+	\newpage
+
+	% Coment this block if you don't want a general information page
+	% Thanks and other information page
+	{\centering Agradecimientos\\}
+	\vfill % Fill the page with whitespace (this is just for aesthetical reasons)
+
+	\cleardoublepage % New page starts on the right hand side
+	
+	\tableofcontents % Create the index
+	\listoffigures % Create index of figures
+	\listoftables % Create index of tables
+	%\lstlistoflistings % Create index for code sections
+	
+	\cleardoublepage % Open on right hand page (odd numbered)
+	
+	\mainmatter 
+	% Activate customized headers
+	\pagestyle{fancy}
+	
+	\include{Chapter1/chapter1} % This is the way we should import files and partition our document.
+	\cleardoublepage
+	
+	\include{Chapter2/chapter2} % This is the way we should import files and partition our document.
+	\cleardoublepage
+	
+	\include{Chapter3/chapter3} % This is the way we should import files and partition our document.
+	\cleardoublepage
+	
+	\include{Chapter4/chapter4} % This is the way we should import files and partition our document.
+	\cleardoublepage
+	
+	\include{Chapter5/chapter5} % This is the way we should import files and partition our document.
+	\cleardoublepage
+	
+	\include{Chapter6/chapter6} % This is the way we should import files and partition our document.
+	
+	%% Include more chapters and or documents.
+	
+	\appendix
+	
+	%% Include appendixes
+	
+	\cleardoublepage
+	
+	\printbibliography[heading=bibintoc] % We print the entire bibliography of the document. The author recommends that, if the document contains tremendous amounts of references, that they should be written at the end of each chapter. Refer to https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX for more information.
+	
+	\backmatter
+	
+\end{document}
