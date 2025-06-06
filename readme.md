@@ -20,7 +20,6 @@ The thesis focuses on designing and implementing an intelligent software solutio
 - Renewable energy availability
 - Grid demand
 - User preferences
-- Battery health
 
 The goal is to create a system that enhances efficiency, reduces costs, and promotes sustainable energy usage.
 

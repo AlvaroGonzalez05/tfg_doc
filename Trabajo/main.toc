@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{Glosario de términos clave en Aprendizaje por Refuerzo}{12}{subsubsection*.10}%
 \contentsline {subsection}{\numberline {2.3.1}Redes Neuronales dentro del RL}{13}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Deep Q-Networks (DQN)}{14}{subsection.2.3.2}%
-\contentsline {subsubsection}{Funcionamiento de DQN \blx@tocontentsinit {0}\cite {mnih2013dqn}}{14}{subsubsection*.13}%
+\contentsline {subsubsection}{Funcionamiento de DQN \blx@tocontentsinit {0}\cite {mnih2013dqn}}{15}{subsubsection*.13}%
 \contentsline {subsubsection}{Ventajas de DQN \blx@tocontentsinit {0}\cite {dhumne2019dqn}}{15}{subsubsection*.14}%
 \contentsline {subsubsection}{Inconvenientes de DQN \blx@tocontentsinit {0}\cite {dhumne2019dqn}}{16}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {2.3.3}Long Short-Term Memory (LSTM)}{16}{subsection.2.3.3}%
@@ -24,8 +24,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Variational Autoencoders (VAEs)}{18}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Modelos de difusión}{18}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Modelos Fundacionales}{19}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Aplicaciones en el sector eléctrico}{19}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.5}Aplicaciones en el sector eléctrico}{20}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Metodología}{21}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Caso de Estudio}{23}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{25}{chapter.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{27}{appendix*.23}%
