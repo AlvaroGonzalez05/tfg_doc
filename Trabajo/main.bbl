@@ -1,0 +1,874 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{yao2005energy}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0f5f87bdd4fb10736c2d92c98b8e40f0}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5e7cb871927fd766fa6cbe8011e28544}{%
+           family={Steemers},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{fullhash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{fullhashraw}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{bibnamehash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{authorbibnamehash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{authornamehash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{authorfullhash}{b5b4fb8435d6474baa004240c02fb6f6}
+      \strng{authorfullhashraw}{b5b4fb8435d6474baa004240c02fb6f6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy and Buildings}
+      \field{number}{6}
+      \field{title}{A method of formulating energy load profile for domestic buildings in the UK}
+      \field{volume}{37}
+      \field{year}{2005}
+      \field{pages}{663\bibrangedash 671}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.enbuild.2004.09.007
+      \endverb
+    \endentry
+    \entry{googletrends2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c0d71e6d420365bd1c2c7176d6bc49c1}{%
+           family={{Google Trends}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{fullhash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{fullhashraw}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{bibnamehash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{authorbibnamehash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{authornamehash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{authorfullhash}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \strng{authorfullhashraw}{c0d71e6d420365bd1c2c7176d6bc49c1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido el 3 de junio de 2025}
+      \field{title}{Interés de búsqueda por "vehículo eléctrico" en España (2015-2025)}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://trends.google.com
+      \endverb
+      \verb{url}
+      \verb https://trends.google.com
+      \endverb
+    \endentry
+    \entry{kaggle_ev_charging_patterns}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b276db625ffbac61ee30e146cc7e0c12}{%
+           family={Khorasani},
+           familyi={K\bibinitperiod},
+           given={Vala},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{fullhash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{fullhashraw}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{bibnamehash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{authorbibnamehash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{authornamehash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{authorfullhash}{b276db625ffbac61ee30e146cc7e0c12}
+      \strng{authorfullhashraw}{b276db625ffbac61ee30e146cc7e0c12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.kaggle.com/datasets/valakhorasani/electric-vehicle-charging-patterns}}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{Electric Vehicle Charging Patterns}
+      \field{year}{2023}
+    \endentry
+    \entry{pflugradt2020loadprofile}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=43380e45fd1dd829e15021bb6e99aa3a}{%
+           family={Pflugradt},
+           familyi={P\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Bern University of Applied Sciences}%
+      }
+      \strng{namehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{fullhash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{fullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{bibnamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorbibnamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authornamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorfullhash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorfullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Load Profile Generator: Modeling of Synthetical Load Profiles}
+      \field{type}{phdthesis}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.loadprofilegenerator.de/
+      \endverb
+      \verb{url}
+      \verb https://www.loadprofilegenerator.de/
+      \endverb
+    \endentry
+    \entry{lpg_screenshots_2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=43380e45fd1dd829e15021bb6e99aa3a}{%
+           family={Pflugradt},
+           familyi={P\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{fullhash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{fullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{bibnamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorbibnamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authornamehash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorfullhash}{43380e45fd1dd829e15021bb6e99aa3a}
+      \strng{authorfullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.loadprofilegenerator.de/screenshots/}}
+      \field{note}{Capturas de pantalla accedidas el 4 de junio de 2025}
+      \field{title}{Load Profile Generator – Screenshots}
+      \field{year}{2025}
+    \endentry
+    \entry{wright2025optimization}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c49efb16d3fa7eef002cc3620d42ab8a}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Encyclopedia Britannica}%
+      }
+      \strng{namehash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{fullhash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{fullhashraw}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{bibnamehash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{authorbibnamehash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{authornamehash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{authorfullhash}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \strng{authorfullhashraw}{c49efb16d3fa7eef002cc3620d42ab8a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{optimization}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/optimization
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/optimization
+      \endverb
+    \endentry
+    \entry{wikipedia2025optimizacion}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Wikipedia, la enciclopedia libre. Consultado el 4 de junio de 2025}
+      \field{title}{Optimización (matemática)}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://es.wikipedia.org/wiki/Optimizacion_(matematica)
+      \endverb
+      \verb{url}
+      \verb https://es.wikipedia.org/wiki/Optimizacion_(matematica)
+      \endverb
+    \endentry
+    \entry{funke2024discreteopt}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=bfccc8931e11aa3afbdf4689c6578fd5}{%
+           family={Funke},
+           familyi={F\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stuttgart, Germany}%
+      }
+      \strng{namehash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{fullhash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{fullhashraw}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{bibnamehash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{authorbibnamehash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{authornamehash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{authorfullhash}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \strng{authorfullhashraw}{bfccc8931e11aa3afbdf4689c6578fd5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Course material, University of Stuttgart}
+      \field{title}{Discrete Optimization -- Lecture Notes}
+      \field{year}{2024}
+    \endentry
+    \entry{sutton2018reinforcement}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=eb920e5277d3d5fd0903f3cd41e11871}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=32a0a208f8bcf56a13b0a8e618aa806a}{%
+           family={Barto},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{bibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorbibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authornamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Reinforcement Learning: An Introduction}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+      \endverb
+    \endentry
+    \entry{wang2022nn_drl}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=67b7041c3b3a0e1e96cddc46c4cefc12}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chloe\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{fullhash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{fullhashraw}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{bibnamehash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{authorbibnamehash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{authornamehash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{authorfullhash}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \strng{authorfullhashraw}{67b7041c3b3a0e1e96cddc46c4cefc12}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{A Look into Neural Networks and Deep Reinforcement Learning}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://chloeewang.medium.com/a-look-into-neural-networks-and-deep-reinforcement-learning-2d5a9baef3e3
+      \endverb
+      \verb{url}
+      \verb https://chloeewang.medium.com/a-look-into-neural-networks-and-deep-reinforcement-learning-2d5a9baef3e3
+      \endverb
+    \endentry
+    \entry{deepmind2025website}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0831beb3084156aee5b3646a045a1151}{%
+           family={{DeepMind}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{fullhash}{0831beb3084156aee5b3646a045a1151}
+      \strng{fullhashraw}{0831beb3084156aee5b3646a045a1151}
+      \strng{bibnamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorbibnamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authornamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorfullhash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorfullhashraw}{0831beb3084156aee5b3646a045a1151}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{DeepMind – Solving intelligence to advance science and benefit humanity}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://deepmind.google/
+      \endverb
+      \verb{url}
+      \verb https://deepmind.google/
+      \endverb
+    \endentry
+    \entry{deepmind2017alphazero}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0831beb3084156aee5b3646a045a1151}{%
+           family={{DeepMind}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{fullhash}{0831beb3084156aee5b3646a045a1151}
+      \strng{fullhashraw}{0831beb3084156aee5b3646a045a1151}
+      \strng{bibnamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorbibnamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authornamehash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorfullhash}{0831beb3084156aee5b3646a045a1151}
+      \strng{authorfullhashraw}{0831beb3084156aee5b3646a045a1151}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{DeepMind Blog, accessed 2025-06-04}
+      \field{title}{AlphaZero: Shedding new light on chess, shogi, and Go}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go
+      \endverb
+      \verb{url}
+      \verb https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go
+      \endverb
+    \endentry
+    \entry{dhumne2019dqn}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=08eb6c5aed6fefa86b501152dc3f2d51}{%
+           family={Dhumne},
+           familyi={D\bibinitperiod},
+           given={Shruti},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{fullhash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{fullhashraw}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{bibnamehash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{authorbibnamehash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{authornamehash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{authorfullhash}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \strng{authorfullhashraw}{08eb6c5aed6fefa86b501152dc3f2d51}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{Deep Q-Network (DQN)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://medium.com/@shruti.dhumne/deep-q-network-dqn-90e1a8799871
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@shruti.dhumne/deep-q-network-dqn-90e1a8799871
+      \endverb
+    \endentry
+    \entry{amin2020dqn}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6dd5b3ca2b1b46d8bdc438c9e39b9deb}{%
+           family={Amin},
+           familyi={A\bibinitperiod},
+           given={Samina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{fullhash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{fullhashraw}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{bibnamehash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{authorbibnamehash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{authornamehash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{authorfullhash}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \strng{authorfullhashraw}{6dd5b3ca2b1b46d8bdc438c9e39b9deb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{Deep Q-Learning (DQN)}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://medium.com/@samina.amin/deep-q-learning-dqn-71c109586bae
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@samina.amin/deep-q-learning-dqn-71c109586bae
+      \endverb
+    \endentry
+    \entry{watkins1992qlearning}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6522b6087fe013d303faca6da91596ca}{%
+           family={Watkins},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelimb J.\bibnamedelimi C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ef0afbe0b4e15059c963e026fe213c34}{%
+           family={Dayan},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{fullhash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{fullhashraw}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{bibnamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authorbibnamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authornamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authorfullhash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authorfullhashraw}{1f776b9a46cb729efd9599e3af8beeef}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{number}{3–4}
+      \field{title}{Q-learning}
+      \field{volume}{8}
+      \field{year}{1992}
+      \field{pages}{279\bibrangedash 292}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/BF00992698
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/BF00992698
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/BF00992698
+      \endverb
+    \endentry
+    \entry{mnih2013dqn}{report}{}{}
+      \name{author}{7}{}{%
+        {{hash=f7d23cfe4ca0e6bf7a8c251bfa78aca6}{%
+           family={Mnih},
+           familyi={M\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{%
+           family={Kavukcuoglu},
+           familyi={K\bibinitperiod},
+           given={Koray},
+           giveni={K\bibinitperiod}}}%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dfca94b0427da7f9088af596e23b46c0}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=af540e84ef1ecdaa70b1f7c90f59fd7d}{%
+           family={Antonoglou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d7805381550fb5f8360345f7f72c0b49}{%
+           family={Wierstra},
+           familyi={W\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9449802bcb467309c0ebced658096818}{%
+           family={Riedmiller},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {DeepMind Technologies}%
+      }
+      \strng{namehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{fullhash}{2860d669102abb5e113bf4232d6d5997}
+      \strng{fullhashraw}{2860d669102abb5e113bf4232d6d5997}
+      \strng{bibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorbibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authornamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorfullhash}{2860d669102abb5e113bf4232d6d5997}
+      \strng{authorfullhashraw}{2860d669102abb5e113bf4232d6d5997}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{number}{arXiv:1312.5602}
+      \field{title}{Playing Atari with Deep Reinforcement Learning}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1312.5602
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1312.5602
+      \endverb
+    \endentry
+    \entry{bulling2024rnn}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5153be8c2167a45315a4a73b5f626ab7}{%
+           family={Bulling},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{fullhash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{fullhashraw}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{bibnamehash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{authorbibnamehash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{authornamehash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{authorfullhash}{5153be8c2167a45315a4a73b5f626ab7}
+      \strng{authorfullhashraw}{5153be8c2167a45315a4a73b5f626ab7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Lecture slides, University of Stuttgart, Winter Semester 2024/2025}
+      \field{title}{Machine Perception and Learning – Lecture 4: Recurrent Neural Networks (RNNs)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.collaborative-ai.org/
+      \endverb
+      \verb{url}
+      \verb https://www.collaborative-ai.org/
+      \endverb
+    \endentry
+    \entry{calzone2020lstm}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b95083aa6d582e2d387439225d11d286}{%
+           family={Calzone},
+           familyi={C\bibinitperiod},
+           given={Ottavio},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b95083aa6d582e2d387439225d11d286}
+      \strng{fullhash}{b95083aa6d582e2d387439225d11d286}
+      \strng{fullhashraw}{b95083aa6d582e2d387439225d11d286}
+      \strng{bibnamehash}{b95083aa6d582e2d387439225d11d286}
+      \strng{authorbibnamehash}{b95083aa6d582e2d387439225d11d286}
+      \strng{authornamehash}{b95083aa6d582e2d387439225d11d286}
+      \strng{authorfullhash}{b95083aa6d582e2d387439225d11d286}
+      \strng{authorfullhashraw}{b95083aa6d582e2d387439225d11d286}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-04}
+      \field{title}{An Intuitive Explanation of LSTM}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://medium.com/@ottaviocalzone/an-intuitive-explanation-of-lstm-a035eb6ab42c
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@ottaviocalzone/an-intuitive-explanation-of-lstm-a035eb6ab42c
+      \endverb
+    \endentry
+    \entry{xiao2022gan}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=14481024eba4963acd087e6cd3d506b3}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{fullhash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{fullhashraw}{14481024eba4963acd087e6cd3d506b3}
+      \strng{bibnamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorbibnamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authornamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorfullhash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorfullhashraw}{14481024eba4963acd087e6cd3d506b3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{title}{Generative Adversarial Network and Its Application in Energy Internet}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1155/2022/9985522
+      \endverb
+    \endentry
+    \entry{moradzadeh2022vae}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d7fcad6de7237298edff79027fb9ebed}{%
+           family={Moradzadeh},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3f750370136ed2ab160afae286f4d64d}{%
+           family={Moayyed},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b2ecc30641ffc875a33a595040b3dc89}{%
+           family={Zare},
+           familyi={Z\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3237b23f78efb9744e28c5e87ab9c4c7}{%
+           family={Mohammadi-Ivatloo},
+           familyi={M\bibinithyphendelim I\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{202b938df47c8e757455949919ecac82}
+      \strng{fullhash}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{fullhashraw}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{bibnamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authorbibnamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authornamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authorfullhash}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{authorfullhashraw}{ee29932907e192e75b2a14b2cbe7b787}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Energy Technologies and Assessments}
+      \field{title}{Short-term electricity demand forecasting via variational autoencoders and batch training-based bidirectional long short-term memory}
+      \field{volume}{52}
+      \field{year}{2022}
+      \field{pages}{102209}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.seta.2022.102209
+      \endverb
+    \endentry
+    \entry{weng2021diffusion}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=49d03d499031db786a0e61119024cf5a}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Lilian},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{fullhash}{49d03d499031db786a0e61119024cf5a}
+      \strng{fullhashraw}{49d03d499031db786a0e61119024cf5a}
+      \strng{bibnamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorbibnamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authornamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorfullhash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorfullhashraw}{49d03d499031db786a0e61119024cf5a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-16}
+      \field{title}{What are Diffusion Models?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+      \endverb
+      \verb{url}
+      \verb https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+      \endverb
+    \endentry
+    \entry{umay2024llms}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2cd591e8ab15e1b2179401c4aded9cea}{%
+           family={Umay},
+           familyi={U\bibinitperiod},
+           given={Kadri},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{fullhash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{fullhashraw}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{bibnamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorbibnamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authornamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorfullhash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorfullhashraw}{2cd591e8ab15e1b2179401c4aded9cea}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-14}
+      \field{title}{Use Cases for Foundation Models (aka LLMs) in the Energy Industry}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/pulse/use-cases-foundation-models-aka-llms-energy-industry-kadri-umay/
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/pulse/use-cases-foundation-models-aka-llms-energy-industry-kadri-umay/
+      \endverb
+    \endentry
+    \entry{python2024language}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lenguaje de Programación Python}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.python.org
+      \endverb
+      \verb{url}
+      \verb https://www.python.org
+      \endverb
+    \endentry
+    \entry{pyomo2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c5b65538ee72096e6105c1845c24a521}{%
+           family={{Pyomo Developers}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{fullhash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{fullhashraw}{c5b65538ee72096e6105c1845c24a521}
+      \strng{bibnamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorbibnamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authornamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorfullhash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorfullhashraw}{c5b65538ee72096e6105c1845c24a521}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Version 6.7.0, accessed 2024-06-04}
+      \field{title}{Pyomo Optimization Modeling in Python}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pyomo.org/
+      \endverb
+      \verb{url}
+      \verb https://pyomo.org/
+      \endverb
+    \endentry
+    \entry{gurobi2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3fb19cc60482639d6ec88ca136745f1}{%
+           family={{Gurobi Optimization, LLC}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{fullhash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{fullhashraw}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{bibnamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorbibnamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authornamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorfullhash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorfullhashraw}{e3fb19cc60482639d6ec88ca136745f1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gurobi Optimizer Reference Manual}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.gurobi.com
+      \endverb
+      \verb{url}
+      \verb https://www.gurobi.com
+      \endverb
+    \endentry
+    \entry{paszke2019pytorch}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a767f9744c81d8128970756f6d8f3fa3}{%
+           family={Paszke},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e4e832f7d17a905ad093bfe34b4e99cd}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=efe1e82d36eee7844132c97f3c598928}{%
+           family={Massa},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{fullhash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{fullhashraw}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{bibnamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorbibnamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authornamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorfullhash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorfullhashraw}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{PyTorch: An Imperative Style, High-Performance Deep Learning Library}
+      \field{year}{2019}
+      \field{pages}{8024\bibrangedash 8035}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

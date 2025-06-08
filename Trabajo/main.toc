@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{Glosario de términos clave en Aprendizaje por Refuerzo}{12}{subsubsection*.10}%
 \contentsline {subsection}{\numberline {2.3.1}Redes Neuronales dentro del RL}{13}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Deep Q-Networks (DQN)}{14}{subsection.2.3.2}%
-\contentsline {subsubsection}{Funcionamiento de DQN \blx@tocontentsinit {0}\cite {mnih2013dqn}}{15}{subsubsection*.13}%
+\contentsline {subsubsection}{Funcionamiento de DQN \blx@tocontentsinit {0}\cite {mnih2013dqn}}{14}{subsubsection*.13}%
 \contentsline {subsubsection}{Ventajas de DQN \blx@tocontentsinit {0}\cite {dhumne2019dqn}}{15}{subsubsection*.14}%
 \contentsline {subsubsection}{Inconvenientes de DQN \blx@tocontentsinit {0}\cite {dhumne2019dqn}}{16}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {2.3.3}Long Short-Term Memory (LSTM)}{16}{subsection.2.3.3}%
@@ -27,4 +27,24 @@
 \contentsline {subsection}{\numberline {2.4.5}Aplicaciones en el sector eléctrico}{20}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Metodología}{21}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Caso de Estudio}{23}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{25}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Generador de Perfiles Energéticos}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Generador de Consumo}{23}{section.4.2}%
+\contentsline {subsubsection}{Descripción de los Datos Generados}{26}{subsubsection*.25}%
+\contentsline {section}{\numberline {4.3}Gestor de Carga de EVs}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Optimización Clásica}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Red Neuronal de Aprendizaje por Refuerzo}{28}{subsection.4.3.2}%
+\contentsline {subsubsection}{Entorno de la Red DQN-LSTM}{30}{subsubsection*.28}%
+\contentsline {paragraph}{Estado del entorno.}{30}{paragraph*.29}%
+\contentsline {paragraph}{Acciones.}{30}{paragraph*.30}%
+\contentsline {paragraph}{Dinámica.}{31}{paragraph*.31}%
+\contentsline {paragraph}{Función de recompensa.}{31}{paragraph*.32}%
+\contentsline {paragraph}{Formato del episodio.}{31}{paragraph*.33}%
+\contentsline {subsubsection}{Entrenamiento del Agente DQN-LSTM.}{32}{subsubsection*.34}%
+\contentsline {paragraph}{Representación temporal.}{32}{paragraph*.35}%
+\contentsline {paragraph}{Parámetros del entrenamiento.}{32}{paragraph*.36}%
+\contentsline {paragraph}{Algoritmo.}{32}{paragraph*.37}%
+\contentsline {paragraph}{Monitorización y métricas.}{32}{paragraph*.38}%
+\contentsline {subsubsection}{Resultados del Agente DQN-LSTM.}{33}{subsubsection*.39}%
+\contentsline {chapter}{\numberline {5}Resultados}{35}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones y Trabajo Futuro}{37}{chapter.6}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}{appendix*.40}%

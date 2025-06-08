@@ -613,6 +613,261 @@
       \verb https://medium.com/@ottaviocalzone/an-intuitive-explanation-of-lstm-a035eb6ab42c
       \endverb
     \endentry
+    \entry{xiao2022gan}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=14481024eba4963acd087e6cd3d506b3}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{fullhash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{fullhashraw}{14481024eba4963acd087e6cd3d506b3}
+      \strng{bibnamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorbibnamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authornamehash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorfullhash}{14481024eba4963acd087e6cd3d506b3}
+      \strng{authorfullhashraw}{14481024eba4963acd087e6cd3d506b3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{title}{Generative Adversarial Network and Its Application in Energy Internet}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1155/2022/9985522
+      \endverb
+    \endentry
+    \entry{moradzadeh2022vae}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d7fcad6de7237298edff79027fb9ebed}{%
+           family={Moradzadeh},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3f750370136ed2ab160afae286f4d64d}{%
+           family={Moayyed},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b2ecc30641ffc875a33a595040b3dc89}{%
+           family={Zare},
+           familyi={Z\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3237b23f78efb9744e28c5e87ab9c4c7}{%
+           family={Mohammadi-Ivatloo},
+           familyi={M\bibinithyphendelim I\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{202b938df47c8e757455949919ecac82}
+      \strng{fullhash}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{fullhashraw}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{bibnamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authorbibnamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authornamehash}{202b938df47c8e757455949919ecac82}
+      \strng{authorfullhash}{ee29932907e192e75b2a14b2cbe7b787}
+      \strng{authorfullhashraw}{ee29932907e192e75b2a14b2cbe7b787}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Energy Technologies and Assessments}
+      \field{title}{Short-term electricity demand forecasting via variational autoencoders and batch training-based bidirectional long short-term memory}
+      \field{volume}{52}
+      \field{year}{2022}
+      \field{pages}{102209}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.seta.2022.102209
+      \endverb
+    \endentry
+    \entry{weng2021diffusion}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=49d03d499031db786a0e61119024cf5a}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Lilian},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{fullhash}{49d03d499031db786a0e61119024cf5a}
+      \strng{fullhashraw}{49d03d499031db786a0e61119024cf5a}
+      \strng{bibnamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorbibnamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authornamehash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorfullhash}{49d03d499031db786a0e61119024cf5a}
+      \strng{authorfullhashraw}{49d03d499031db786a0e61119024cf5a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-16}
+      \field{title}{What are Diffusion Models?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+      \endverb
+      \verb{url}
+      \verb https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+      \endverb
+    \endentry
+    \entry{umay2024llms}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2cd591e8ab15e1b2179401c4aded9cea}{%
+           family={Umay},
+           familyi={U\bibinitperiod},
+           given={Kadri},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{fullhash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{fullhashraw}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{bibnamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorbibnamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authornamehash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorfullhash}{2cd591e8ab15e1b2179401c4aded9cea}
+      \strng{authorfullhashraw}{2cd591e8ab15e1b2179401c4aded9cea}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-10-14}
+      \field{title}{Use Cases for Foundation Models (aka LLMs) in the Energy Industry}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/pulse/use-cases-foundation-models-aka-llms-energy-industry-kadri-umay/
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/pulse/use-cases-foundation-models-aka-llms-energy-industry-kadri-umay/
+      \endverb
+    \endentry
+    \entry{python2024language}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lenguaje de Programación Python}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.python.org
+      \endverb
+      \verb{url}
+      \verb https://www.python.org
+      \endverb
+    \endentry
+    \entry{pyomo2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c5b65538ee72096e6105c1845c24a521}{%
+           family={{Pyomo Developers}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{fullhash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{fullhashraw}{c5b65538ee72096e6105c1845c24a521}
+      \strng{bibnamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorbibnamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authornamehash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorfullhash}{c5b65538ee72096e6105c1845c24a521}
+      \strng{authorfullhashraw}{c5b65538ee72096e6105c1845c24a521}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Version 6.7.0, accessed 2024-06-04}
+      \field{title}{Pyomo Optimization Modeling in Python}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pyomo.org/
+      \endverb
+      \verb{url}
+      \verb https://pyomo.org/
+      \endverb
+    \endentry
+    \entry{gurobi2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3fb19cc60482639d6ec88ca136745f1}{%
+           family={{Gurobi Optimization, LLC}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{fullhash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{fullhashraw}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{bibnamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorbibnamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authornamehash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorfullhash}{e3fb19cc60482639d6ec88ca136745f1}
+      \strng{authorfullhashraw}{e3fb19cc60482639d6ec88ca136745f1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gurobi Optimizer Reference Manual}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.gurobi.com
+      \endverb
+      \verb{url}
+      \verb https://www.gurobi.com
+      \endverb
+    \endentry
+    \entry{paszke2019pytorch}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a767f9744c81d8128970756f6d8f3fa3}{%
+           family={Paszke},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e4e832f7d17a905ad093bfe34b4e99cd}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=efe1e82d36eee7844132c97f3c598928}{%
+           family={Massa},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{fullhash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{fullhashraw}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{bibnamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorbibnamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authornamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorfullhash}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \strng{authorfullhashraw}{a023e6fadc9ad7a51913dfd5da15dbbb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{PyTorch: An Imperative Style, High-Performance Deep Learning Library}
+      \field{year}{2019}
+      \field{pages}{8024\bibrangedash 8035}
+      \range{pages}{12}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

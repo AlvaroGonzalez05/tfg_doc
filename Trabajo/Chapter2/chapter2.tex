@@ -1,4 +1,5 @@
 \chapter{Estado del Arte}
+\label{chapter:chapter2}
 \section{Fuentes de datos}
 Tal y como se ha explicado en la intriducción, durante el desarrollo del proyecto se van a combinar
 técnicas de IA Generativa, Redes Neuronales con Aprendizaje por Refuerzo y algoritmos clásicos de 
@@ -193,7 +194,7 @@ los términos más relevantes y que serán utilizados a lo largo del trabajo:
     en un estado determinado. Indica el grado de éxito o fracaso de la acción tomada.
     \item \textbf{Política (\(\pi\))}: Estrategia que sigue el agente para decidir qué acción tomar 
     en cada estado. %Formalmente, es una función que asigna a cada estado la acción que maximiza la recompensa esperada.
-    \item \textbf{Valor (V)}: Valor esperado de la recompensa acumulada (a largo plazo y con 
+    \item \textbf{Valor o Utilidad (V)}: Valor esperado de la recompensa acumulada (a largo plazo y con 
     descuento) que puede obtener el agente desde un estado concreto, siguiendo una política 
     determinada.
     \item \textbf{Valor de acción (Q)}: Valor esperado de la recompensa acumulada (con descuento) 
@@ -260,12 +261,12 @@ Q-learning tradicional, DQN usa una red para aproximar los valores \( Q(s, a) \)
 buena que es una acción \( a \) en un estado \( s \).
 
 \begin{itemize}
-    \item \textbf{Valor objetivo:} Para aprender, DQN compara su predicción con un valor objetivo,
-    calculado como:
-    \[
-    y = r + \gamma \max_{a'} Q(s', a'; \theta^-)
-    \]
-    donde:
+    \item \textbf{Valor objetivo (Ecuación de Bellman):} Para aprender, DQN compara su predicción 
+    con un valor objetivo, calculado usando la ecuación de Bellman:
+        \[
+        y = r + \gamma \max_{a'} Q(s', a'; \theta^-)
+        \]
+     donde:
     \begin{itemize}
         \item \( r \) es la recompensa obtenida tras hacer una acción,
         \item \( s' \) es el siguiente estado,
@@ -273,6 +274,7 @@ buena que es una acción \( a \) en un estado \( s \).
         futuras,
         \item \( \theta^- \) son los parámetros de una copia de la red (llamada red objetivo).
     \end{itemize}
+    Esta actualización sigue el principio de optimalidad de Bellman, que define cómo se calcula el valor óptimo esperado de una acción en un estado.
 
     \item \textbf{Función de pérdida:} La red aprende minimizando la diferencia entre lo que predice 
     y el valor objetivo:
@@ -316,10 +318,11 @@ buena que es una acción \( a \) en un estado \( s \).
 
 \subsection{Long Short-Term Memory (LSTM)}
 Las redes \textit{Long Short-Term Memory} (LSTM) son una arquitectura de redes neuronales 
-recurrentes (RNNs) diseñada para gestionar información secuencial de forma más eficaz. A diferencia 
-de las RNN simples, que utilizan un único vector oculto para propagar información, las LSTM 
-incorporan una estructura interna más compleja que les permite mantener información relevante 
-durante más tiempo y decidir qué conservar y qué olvidar~\cite{bulling2024rnn}.
+recurrentes (RNNs) diseñada para gestionar información secuencial - como las series temporales - de 
+forma más eficaz. A diferencia de las RNN simples, que utilizan un único vector oculto para 
+propagar información, las LSTM incorporan una estructura interna más compleja que les permite 
+mantener información relevante durante más tiempo y decidir qué conservar y qué 
+olvidar~\cite{bulling2024rnn}.
 
 \begin{figure}[ht]
     \centering

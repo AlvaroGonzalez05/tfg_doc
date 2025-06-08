@@ -66,6 +66,23 @@
 \usepackage{setspace} % To set the line spacing
 \usepackage{microtype} % To improve the typography of the document
 \usepackage{array}
+\usepackage{tikz-cd} % To create commutative diagrams
+\usepackage{pgfplots} % To create plots with Tikz
+\usepackage{pgfplotstable} % To create tables with Tikz
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes, arrows.meta, positioning}
+
+% Entorno personalizado para los pasos conectados
+\newcommand{\modelstep}[2]{
+  \noindent
+  \begin{tikzpicture}[baseline=(text.base)]
+    \node[anchor=base west, inner sep=0pt] (text) {#2};
+    \node[left=1em of text.base west, minimum width=1pt] (dot) {};
+    \draw[very thick, -{Latex[length=2mm]}, gray]
+      ($(dot)+(0,-0.6em)$) -- (dot);
+  \end{tikzpicture}
+}
+
 %% PACKAGE CONFIGURATION
 
 % Bibliography resource
@@ -112,7 +129,7 @@
 		Autor \\ Álvaro González Tabernero \\ % Your name
 		\vspace*{1em}
 		Directores \\ Francisco Martín Martínez \\ Jaime Boal Martín-Larrauri % Supervisor(s) name(s) 
-		% {\vfill \vspace*{3em}{Author's signature:\hrulefill \hfill} \hfill \\ \vspace*{4em}Supervisors' signatures:\hrulefill \hfill} % Uncoment this line if you would like to add a signature space
+		%{\vfill \vspace*{3em}{Author's signature:\hrulefill \hfill} \hfill \\ \vspace*{4em}Supervisors' signatures:\hrulefill \hfill} % Uncoment this line if you would like to add a signature space
 		\vfill
 		Madrid \\
 		Junio 2025 % Modify accordingly
@@ -152,7 +169,7 @@
 	\include{Chapter5/chapter5} % This is the way we should import files and partition our document.
 	\cleardoublepage
 	\include{Chapter6/chapter6} % This is the way we should import files and partition our document.
-	
+	\cleardoublepage
 	%% Include more chapters and or documents.
 	
 	\appendix
