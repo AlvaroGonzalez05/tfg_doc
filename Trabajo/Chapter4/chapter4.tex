@@ -2,8 +2,8 @@
 \section{Generador de Perfiles Energéticos}
 El uso de los vehículos es particular al estilo de vida de cada usuario, tanto para vehículos de
 combustión como para vehículos eléctricos. Por ello, es necesario generar perfiles energéticos que
-sinteticen y agrupen los diferentes usos energéticos —y por tanto la necesidad de carga de dichos
-vehículos— de los usuarios.\\
+sinteticen y agrupen los diferentes usos energéticos — y por tanto la necesidad de carga de dichos
+vehículos — de los usuarios.\\
 
 En el primer bloque que compone el trabajo, se ha desarrollado un algoritmo generador de perfiles 
 de carga de EVs, partiendo del \textit{Electric Vehicle Charging Dataset}~\cite{kaggle_ev_charging_patterns}.
@@ -16,10 +16,57 @@ Los parámetros de la GAN se han ajustado para que los perfiles generados repres
 la variabilidad de la demanda energética para la carga de un EV, teniendo en cuenta las restricciones,
 requisitos y hábitos del usuario. El resultado es un conjunto de perfiles energéticos que pueden
 ser utilizados para entrenar y evaluar el gestor de carga de EVs, así como para simular diferentes
-escenarios de carga y consumo energético.
+escenarios de carga y consumo energético.\\
+
+A partir de los datos obtenidos, tanto del dataset original como los generados, se han podido 
+extraer una serie de perfiles y patrones de consumo energético, que se han agrupado en distintas 
+categorías, y que se han utilizado para entrenar el gestor de carga de EVs. Estos perfiles se han
+usado principalmente para ofrecer al gestor un rango de disponibilidad de carga del vehículo y 
+oportunidades de carga a lo largo del día, en funcion de la "personalidad" de cada uno de los 
+usuarios.\\
+
+Es importante resaltar que, con el fin de introducir algo de variabilidad en los perfiles, y reducir
+el determinismo en cuanto a la disponibilidad de carga se refiere, durante el proyecto se ha 
+tratado esta funcion de disponibilidad como una función probabilística definida a trozos. Esto 
+significa que, para cada perfil de usuario, según la hora del día, se ha asignado una probabilidad
+de que el usuario esté disponible para cargar su vehículo eléctrico. El número concreto de esta
+probabilidad asignada, se ha obtenido juntando la la información del dataset original, la 
+información obtenida de los datos generados, y la idea general detrás de cada perfil de usuario, y
+sus características más convencionales.\\
+
+Los perfiles generados se han agrupado en las siguientes categorías, que representan los
+distintos tipos de usuarios y sus hábitos de carga:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{2cm} p{7cm} p{3.5cm}}
+        \toprule
+        \textbf{Perfil} & \textbf{Hábitos de carga} & \textbf{Disponibilidad (probabilidad)} \\
+        \midrule
+        Trabajador (\texttt{worker}) &
+        Carga principalmente de noche (00:00–06:00, 21:00–00:00); baja disponibilidad en horario laboral. &
+        00:00–06:00: 0.95; 06:00–21:00: 0.10; 21:00–00:00: 0.85 \\
+        \addlinespace[0.5ex]
+        Flexible &
+        Disponibilidad media y estable, con ligera bajada en horario laboral. &
+        00:00–08:00: 0.80; 08:00–18:00: 0.60; 18:00–00:00: 0.75 \\
+        \addlinespace[0.5ex]
+        Jubilado (\texttt{retired}) &
+        Alta disponibilidad todo el día, salvo ausencias puntuales a mediodía y tarde. &
+        00:00–12:00: 0.95; 12:00–16:00: 0.70; 16:00–00:00: 0.90 \\
+        \addlinespace[0.5ex]
+        Viajero (\texttt{traveller}) &
+        Alta disponibilidad salvo ausencias frecuentes en horario diurno y algunas tardes. &
+        00:00–08:00: 0.90; 08:00–18:00: 0.40; 18:00–00:00: 0.80 \\
+        \addlinespace[0.5ex]
+        Nocturno (\texttt{night\_owl}) &
+        Carga casi exclusiva por la noche; baja disponibilidad diurna. &
+        00:00–06:00: 0.98; 06:00–20:00: 0.15; 20:00–00:00: 0.90 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Perfiles energéticos generados para usuarios de EV y sus probabilidades de disponibilidad}
+\end{table}
 
 \section{Generador de Consumo}
-
 Este segundo bloque se centra en la tarea de generación de consumos energéticos domésticos,
 utilizando el software \textit{Load Profile Generator (LPG)}. Se ha configurado una vivienda de
 tipo unifamiliar en el entorno urbano de Madrid, modelada para representar una situación típica

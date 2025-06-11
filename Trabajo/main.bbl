@@ -40,8 +40,8 @@
       \strng{authornamehash}{b5b4fb8435d6474baa004240c02fb6f6}
       \strng{authorfullhash}{b5b4fb8435d6474baa004240c02fb6f6}
       \strng{authorfullhashraw}{b5b4fb8435d6474baa004240c02fb6f6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Energy and Buildings}
@@ -69,8 +69,8 @@
       \strng{authornamehash}{c0d71e6d420365bd1c2c7176d6bc49c1}
       \strng{authorfullhash}{c0d71e6d420365bd1c2c7176d6bc49c1}
       \strng{authorfullhashraw}{c0d71e6d420365bd1c2c7176d6bc49c1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido el 3 de junio de 2025}
@@ -99,8 +99,8 @@
       \strng{authornamehash}{b276db625ffbac61ee30e146cc7e0c12}
       \strng{authorfullhash}{b276db625ffbac61ee30e146cc7e0c12}
       \strng{authorfullhashraw}{b276db625ffbac61ee30e146cc7e0c12}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.kaggle.com/datasets/valakhorasani/electric-vehicle-charging-patterns}}
@@ -128,8 +128,8 @@
       \strng{authorfullhash}{43380e45fd1dd829e15021bb6e99aa3a}
       \strng{authorfullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Load Profile Generator: Modeling of Synthetical Load Profiles}
@@ -159,8 +159,8 @@
       \strng{authorfullhash}{43380e45fd1dd829e15021bb6e99aa3a}
       \strng{authorfullhashraw}{43380e45fd1dd829e15021bb6e99aa3a}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.loadprofilegenerator.de/screenshots/}}
@@ -216,8 +216,8 @@
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Wikipedia, la enciclopedia libre. Consultado el 4 de junio de 2025}
@@ -249,8 +249,8 @@
       \strng{authornamehash}{bfccc8931e11aa3afbdf4689c6578fd5}
       \strng{authorfullhash}{bfccc8931e11aa3afbdf4689c6578fd5}
       \strng{authorfullhashraw}{bfccc8931e11aa3afbdf4689c6578fd5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Course material, University of Stuttgart}
@@ -311,8 +311,8 @@
       \strng{authornamehash}{67b7041c3b3a0e1e96cddc46c4cefc12}
       \strng{authorfullhash}{67b7041c3b3a0e1e96cddc46c4cefc12}
       \strng{authorfullhashraw}{67b7041c3b3a0e1e96cddc46c4cefc12}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-06-04}
@@ -340,8 +340,8 @@
       \strng{authorfullhash}{0831beb3084156aee5b3646a045a1151}
       \strng{authorfullhashraw}{0831beb3084156aee5b3646a045a1151}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-06-04}
@@ -369,8 +369,8 @@
       \strng{authorfullhash}{0831beb3084156aee5b3646a045a1151}
       \strng{authorfullhashraw}{0831beb3084156aee5b3646a045a1151}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{DeepMind Blog, accessed 2025-06-04}
@@ -467,8 +467,8 @@
       \strng{authornamehash}{1f776b9a46cb729efd9599e3af8beeef}
       \strng{authorfullhash}{1f776b9a46cb729efd9599e3af8beeef}
       \strng{authorfullhashraw}{1f776b9a46cb729efd9599e3af8beeef}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Machine Learning}
@@ -537,8 +537,8 @@
       \strng{authornamehash}{aff24b211b34cdd515b2fd148ce0c920}
       \strng{authorfullhash}{2860d669102abb5e113bf4232d6d5997}
       \strng{authorfullhashraw}{2860d669102abb5e113bf4232d6d5997}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-06-04}
@@ -569,8 +569,8 @@
       \strng{authornamehash}{5153be8c2167a45315a4a73b5f626ab7}
       \strng{authorfullhash}{5153be8c2167a45315a4a73b5f626ab7}
       \strng{authorfullhashraw}{5153be8c2167a45315a4a73b5f626ab7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Lecture slides, University of Stuttgart, Winter Semester 2024/2025}
@@ -599,8 +599,8 @@
       \strng{authornamehash}{b95083aa6d582e2d387439225d11d286}
       \strng{authorfullhash}{b95083aa6d582e2d387439225d11d286}
       \strng{authorfullhashraw}{b95083aa6d582e2d387439225d11d286}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-06-04}
@@ -704,8 +704,8 @@
       \strng{authornamehash}{49d03d499031db786a0e61119024cf5a}
       \strng{authorfullhash}{49d03d499031db786a0e61119024cf5a}
       \strng{authorfullhashraw}{49d03d499031db786a0e61119024cf5a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2024-10-16}
@@ -734,8 +734,8 @@
       \strng{authornamehash}{2cd591e8ab15e1b2179401c4aded9cea}
       \strng{authorfullhash}{2cd591e8ab15e1b2179401c4aded9cea}
       \strng{authorfullhashraw}{2cd591e8ab15e1b2179401c4aded9cea}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2024-10-14}
@@ -762,8 +762,8 @@
       \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
       \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
       \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lenguaje de Programación Python}
@@ -789,8 +789,8 @@
       \strng{authornamehash}{c5b65538ee72096e6105c1845c24a521}
       \strng{authorfullhash}{c5b65538ee72096e6105c1845c24a521}
       \strng{authorfullhashraw}{c5b65538ee72096e6105c1845c24a521}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Version 6.7.0, accessed 2024-06-04}
@@ -817,8 +817,8 @@
       \strng{authornamehash}{e3fb19cc60482639d6ec88ca136745f1}
       \strng{authorfullhash}{e3fb19cc60482639d6ec88ca136745f1}
       \strng{authorfullhashraw}{e3fb19cc60482639d6ec88ca136745f1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Gurobi Optimizer Reference Manual}
@@ -858,8 +858,8 @@
       \strng{authornamehash}{a023e6fadc9ad7a51913dfd5da15dbbb}
       \strng{authorfullhash}{a023e6fadc9ad7a51913dfd5da15dbbb}
       \strng{authorfullhashraw}{a023e6fadc9ad7a51913dfd5da15dbbb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems}
