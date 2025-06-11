@@ -1,1 +1,260 @@
 \chapter{Resultados}
+\label{chapter5}
+En el capítulo anterior se ha visto cómo se desenvolían los distintos algoritmos de optimización 
+intentando resolver el problema planteado en el trabajo. A lo largo de este capítulo, se va a hacer
+un análisis conjunto de los resultados obtenidos por separado para cada uno de los algoritmos. Se 
+hará especial hincapié en tres comparaciones fundamentales para el proyecto: coste, energía y 
+rendimiento. Adicionalmente, como derivado natural de la evaluación de los costes y el consmo 
+energético, se analizará también la eficiencia de cada uno de los algoritmos.
+
+Para facilitar la comparación entre la optimización clásica y el agente DQN-LSTM, en cada sección 
+se presentarán los resultados de ambos métodos en paralelo, utilizando tablas comparativas. De este 
+modo, se puede observar de forma directa las diferencias y ventajas de cada enfoque para cada perfil 
+analizado. Además, se puede calcular el porcentaje de diferencia (mejora o empeoramiento) de DQN-LSTM 
+respecto a la optimización clásica para cada métrica relevante, lo que permite cuantificar el impacto 
+de la inteligencia artificial frente a los métodos tradicionales.
+
+\section{Comparativa de Costes}
+La primera comparativa que se va a realizar es la de los costes medios diarios por perfil,
+tanto para la optimización clásica como para el agente DQN-LSTM. Para ello, se muestran en la
+Tabla~\ref{tab:costes_algoritmos} los costes medios diarios para cada perfil:
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Perfil} & \textbf{Costes - Clásica} (EUR) & \textbf{Costes - DQN-LSTM} (EUR) & \textbf{Reducción Costes(\%)} \\
+        \midrule
+        retired     & 27.14 & 1.64 & 93.96 \\
+        night\_owl  & 27.57 & 6.21 & 77.47 \\
+        flexible    & 27.69 & 2.93 & 89.41 \\
+        traveller   & 27.23 & 7.09 & 73.96 \\
+        worker      & 27.35 & 5.04 & 81.57 \\
+        \midrule
+        \textbf{Media} & \textbf{27.40} & \textbf{4.18} & \textbf{84.74} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Comparativa de costes medios diarios por perfil entre la optimización clásica y el 
+    agente DQN-LSTM, junto con el porcentaje de reducción de coste.}
+    \label{tab:costes_algoritmos}
+\end{table}
+
+"[pongo un gráfico en vez de la tabla??]"\\
+
+En esta primera ronda, se puede observar fácilmente como la IA ha conseguido reducir unos datos
+de coste, que ya de por sí no eran extremadamente elevados con la optimización clásica, a unas 
+cifras muy reducidas. En concreto, el agente DQN-LSTM ha conseguido reducir los costes
+medios diarios en un 84.74\% respecto a la optimización clásica, lo que supone una mejora
+significativa en términos de eficiencia económica. Esta reducción es especialmente notable en
+el perfil \textit{retired}, donde se ha alcanzado una reducción del 93.96\%. Esto se podría deber 
+a que este perfil tiene un consumo energético más predecible y estable, lo que permite al
+agente DQN-LSTM optimizar mejor los tiempos de carga y los costes asociados.\\
+
+Por otro lado, el perfil \textit{night\_owl} ha mostrado una reducción del 77.47\%, lo que indica que,
+aunque la optimización clásica ya era eficiente, el agente DQN-LSTM ha logrado mejorar aún más
+la gestión de los tiempos de carga nocturna, aprovechando las tarifas más bajas.\\
+
+Los perfiles \textit{flexible} y \textit{traveller} también han mostrado reducciones significativas,
+con un 89.41\% y un 73.96\% respectivamente. Esto sugiere que, aunque estos perfiles pueden tener
+un consumo mucho más variable, el agente DQN-LSTM ha logrado adaptarse a sus necesidades específicas,
+optimizando los tiempos de carga y reduciendo los costes asociados.\\
+
+Por último, el perfil \textit{worker} ha mostrado una reducción del 81.57\%, ligeramente por debajo
+de la media, lo que indica que el agente DQN-LSTM, de nuevo, ha logrado una mejora considerable 
+para este perfil también. Esto puede deberse a que los trabajadores suelen tener horarios más
+predecibles, lo que permite al agente optimizar mejor los tiempos de carga y los costes asociados.\\
+
+Cerrando este primer análisis, se puede concluir que, en este estudio, la optimización clásica queda
+muy por detrás económicamente de la optimización mediante el agente DQN-LSTM, que ha conseguido 
+incurrir en casi un 85\% menos de costes diarios.
+
+\section{Comparativa de Energía}
+De la misma manera que con el coste, se va a realizar una comparativa de la energía consumida por 
+cada uno de los algoritmos. Para ello, se muestran en la Tabla~\ref{tab:energia_algoritmos} los 
+consumos medios diarios para cada perfil, diferenciando entre la optimización clásica y el agente 
+DQN-LSTM.
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Perfil} & \textbf{Energía - Clásica} (kWh) & \textbf{Energía - DQN-LSTM} (kWh) & \textbf{Reducción Energía (\%)} \\
+        \midrule
+        retired     & 244.08 & 63.28 & 74.08 \\
+        night\_owl  & 244.53 & 268.06 & -9.62 \\
+        flexible    & 245.02 & 120.07 & 50.99 \\
+        traveller   & 242.74 & 325.07 & -33.97 \\
+        worker      & 244.08 & 209.68 & 14.12 \\
+        \midrule
+        \textbf{Media} & \textbf{244.09} & \textbf{197.23} & \textbf{19.21} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Comparativa de energía media diaria por perfil entre la optimización clásica y el agente DQN-LSTM, junto con el porcentaje de reducción de consumo energético.}
+    \label{tab:energia_algoritmos}
+\end{table}
+
+En esta comparativa se busca que el gestor, ya sea el agente DQN-LSTM o la optimización clásica,
+consuma la menor cantidad de energía posible, ya que esto se traduce directamente en una reducción 
+de costes en la carga. En este caso, aunque la IA ha conseguido reducir la energía consumida casi 
+en un 20\% de media, no lo ha hecho de forma uniforme para todos los perfiles.\\
+
+La mayor diferencia entre consumos se encuentra con el perfil \textit{retired}, donde la red 
+neuronal consigue una reducción del 74.08\% respecto a la optimización clásica, una cifra 
+tremendamente elevada. Esto puede deberse a que este perfil tiene un consumo energético mucho más 
+estable y predecible, lo que permite al agente DQN-LSTM aprovechar su entorno y optimizar los tiempos
+de carga para reducir el consumo energético.\\
+
+Por otra parte, el peril night\_owl ha mostrado un aumento del 9.62\% en el consumo energético,
+lo que indica que la optimización clásica ya era eficiente, y el agente DQN-LSTM no ha logrado
+ni siquiera igualar ese consumo. Esto puede deberse a que este perfil tiene un consumo energético
+diurno, y puede haberse visto afectado por la rareza de esta característica, ya que la mayoría del 
+resto de perfiles tienen un consumo nocturno. En este caso, puede ser que la cpaacidad de memoria
+de la inteligencia artificial haya sido un detrimento para su rendimiento en este perfil.\\
+
+El perfil \textit{flexible} ha mostrado una reducción del 50.99\%, lo que muestra que el agente 
+DQN-LSTM se adapta mucho mejor a la flexibilidad de carga de este perfil, contrastando con la 
+rigidez de la optimización clásica. Esto sugiere que el agente ha logrado optimizar los tiempos de
+carga y reducir el consumo energético, aprovechando las horas de menor demanda.\\
+
+El perfil \textit{traveller} ha mostrado un aumento del 33.97\% en el consumo energético, lo que
+indica que la optimización clásica ya era eficiente, y el agente DQN-LSTM de nuevo no ha logrado
+si quiera igualar ese consumo.\\
+
+Por último, el perfil \textit{worker} ha mostrado una reducción del 14.12\%, lo que indica que
+el agente DQN-LSTM ha logrado una mejora considerable en la gestión de los tiempos de carga y el
+consumo energético en el perfil más representativo, aunque no tan significativa como en el caso 
+del perfil \textit{retired}. Esto puede deberse a que los trabajadores suelen tener horarios más
+predecibles, lo que permite al agente optimizar mejor los tiempos de carga y reducir el consumo
+energético.\\
+
+La conclusión de esta comparativa no es del todo clara, ni positiva hacia el agente DQN-LSTM.
+Aunque ha conseguido reducir el consumo energético - de media - en un 19.21\%, lo que supone una 
+mejora considerable, no ha logrado igualar los resultados de la optimización clásica en todos los
+perfiles. De hecho, hay un perfil en el que ha aumentado considerablemente el consumo energético 
+en comparación con la gestión realizada por el algoritmo clásico. Por tanto, aunque la IA ha
+conseguido una mejora significativa en la reducción de costes, no ha logrado una mejora uniforme en
+el consumo energético.
+
+\section{Comparativa de Eficiencia}
+Siguiendo la misma línea que en las comparativas anteriores, se va a realizar una comparativa de la 
+eficiencia de cada uno de los algoritmos. Para ello, se muestran en la Tabla~\ref{tab:eficiencia_algoritmos} 
+las eficiencias medias diarias para cada perfil, diferenciando entre la optimización clásica y el 
+agente DQN-LSTM. La eficiencia se calcula como el cociente entre la energía consumida y el coste, 
+es decir, \( \text{Eficiencia} = \frac{\text{Energía}}{\text{Coste}} \).
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Perfil} & \textbf{Eficiencia - Clásica} (kWh/EUR) & \textbf{Eficiencia - DQN-LSTM} (kWh/EUR) & \textbf{Mejora Eficiencia(\%)} \\
+        \midrule
+        retired     & 8.99  & 37.14 & 313.16 \\
+        night\_owl  & 8.87  & 43.07 & 385.77 \\
+        flexible    & 8.85  & 40.33 & 355.99 \\
+        traveller   & 8.92  & 45.93 & 415.13 \\
+        worker      & 8.92  & 41.63 & 366.77 \\
+        \midrule
+        \textbf{Media} & \textbf{8.91} & \textbf{41.62} & \textbf{367.18} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Comparativa de la eficiencia diaria (kWh/EUR) por perfil entre la optimización clásica y el agente DQN-LSTM, junto con el porcentaje de mejora en eficiencia.}
+    \label{tab:eficiencia_algoritmos}
+\end{table}
+
+La eficiencia es una métrica que combina el coste y el consumo energético, y dado la disparidad en 
+los resultados de las dos comparativas anteriores, se espera que la eficiencia sea una métrica más
+representativa del rendimiento de cada uno de los algoritmos. Naturalmente, al representar esta
+medida, esencialmente, la cantidad de kWh que usados por cada euro invertido, cuanto mayor sea el
+valor, mejor.\\
+
+En este caso sí, la red neuronal ha pasado por encima de la optimización clásica en todos los perfiles.
+Tanto es así, que no merece la pena el análisis de cada perfil individualmente, ya que la mejora es
+de tal magnitud que se puede considerar como una gran mejora generalizada. En concreto, el agente 
+DQN-LSTM ha conseguido una mejora de la eficiencia del 367.18\% respecto a la optimización clásica,
+una diferencia abismal que demuestra la capacidad de la IA para optimizar los tiempos de carga y reducir
+los costes asociados.\\
+
+Si bien es cierto que esta métrica deriva de las dos anteriores, y por tanto, no es una métrica
+independiente. Por ello, podría estar sesgada por los resultados de las comparativas de coste y 
+energía. Sin embargo, la magnitud de la mejora es tal, que puede considerarse una mejora 
+significativa y representativa del rendimiento del agente DQN-LSTM frente a la optimización 
+clásica.
+
+\section{Comparativa de Rendimiento}
+Finalmente, se va a realizar una comparativa del rendimiento de cada uno de los algoritmos.
+Para ello, se muestran en la Tabla~\ref{tab:rendimiento_algoritmos} los rendimientos medios para 
+ambos algoritmos. El rendimiento en este caso se va a basar en el tiempo de ejecución y de decisión/
+inferencia de cada uno de los algoritmos. Se ha medido el tiempo medio de ejecución/entrenamiento de
+cada uno de los algoritmos, así como el tiempo medio de decisión/inferencia.\\
+
+En general, la optimización clásica suele requerir menos tiempo de cálculo para problemas 
+individuales, pero no es escalable ni adaptable a cambios dinámicos. Por otro lado, el agente DQN-
+LSTM requiere un tiempo de entrenamiento inicial mayor, pero una vez entrenado, la inferencia es 
+extremadamente rápida y permite adaptarse a nuevas situaciones en tiempo real.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Perfil} & \textbf{Tiempo total (min)} & \textbf{Tiempo de Solución (ms)} & \textbf{Método} \\
+        \midrule
+        worker      & 0.13\footnotemark[1] & 9.50\footnotemark[2] & Clásica \\
+        flexible    & 0.13\footnotemark[1] & 9.50\footnotemark[2] & Clásica \\
+        retired     & 0.13\footnotemark[1] & 9.50\footnotemark[2] & Clásica \\
+        traveller   & 0.13\footnotemark[1] & 9.50\footnotemark[2] & Clásica \\
+        night\_owl  & 0.13\footnotemark[1] & 9.50\footnotemark[2] & Clásica \\
+        \midrule
+        worker      & 3.98 & 0.174 & DQN-LSTM \\
+        flexible    & 4.39 & 0.294 & DQN-LSTM \\
+        retired     & 4.29 & 0.301 & DQN-LSTM \\
+        traveller   & 4.45 & 0.309 & DQN-LSTM \\
+        night\_owl  & 4.37 & 0.306 & DQN-LSTM \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparativa de tiempos de entrenamiento/optimización total y de inferencia/decisión 
+    por perfil y método. Para la optimización clásica, el tiempo total corresponde al tiempo total 
+    de optimización (8.05 s $\approx$ 0.13 min) y el tiempo de inferencia al tiempo resolviendo 
+    modelos individuales (0.57 s / 60 $\approx$ 9.50 ms por perfil).}
+\end{table}
+
+\footnotetext[1]{Tiempo total de optimización clásica para todos los perfiles.}
+\footnotetext[2]{Tiempo de inferencia de la optimización clásica para cada perfil.}
+
+El análisis de rendimiento computacional, es decir, cuanto tiempo requiere cada programa para 
+resolver el problema para cada uno de los perfiles, es un aspecto fundamental del trabajo. De cara 
+a la implementación de un sistema real, es necesario que el tiempo de respuesta y las demandas 
+computacionales sean lo más bajas posibles, para que el sistema pueda adaptarse a las
+necesidades de los usuarios en tiempo real, sin pérdidas en la calidad del servicio ni requisitos 
+de hardware excesivos.\\
+
+Por la naturaleza de los algoritmos, es necesario dividir la comparación en dos partes: el tiempo
+que requiere cada algooritmo para optimizar el problema como tal, con todas las iteraciones y
+entrenamientos necesarios; y el tiempo que requiere cada algoritmo para inferir o llegra a una 
+solución para una instancia concreta del problema.\\
+
+En la primera de las comparativas, es evidente que la red neuronal es mucho más lenta y 
+computacionalmente intensiva que la optimización clásica. Esto, además de esperado, es lógico, ya 
+que la optimizción clásica es un algoritmo iterativo que resuelve el problema de forma directa. Sin
+memoria, sin entrenamiento ni aprendizaje, simplemente resuelve el problema de forma
+determinista.\\
+
+En cambio, el agente DQN-LSTM requiere un tiempo de entrenamiento inicial mucho mayor, por las 
+razones opuestas al algoritmo clásico. La red neuronal sí debe aprender de los datos,
+requiere un entrenamiento previo y, por tanto, un tiempo de optimización mucho mayor. Además, con
+la dificultad añadida de la incorporación de unas capas de LSTM, cuya función es esencial para el 
+más que adecuado funcionamiento de la red, pero incrementa el tiempo de entrenamiento y los recursos
+computacionales necesarios.\\
+
+Sin embargo, una vez entrenada, la red neuronal es mucho más capaz que la optimización clásica
+para resolver problemas individuales. En este caso, el mejor tiempo de inferencia del agente DQN-LSTM
+es incluso menor que el 2,5\% del tiempo de inferencia de la optimización clásica.
+Esto se debe a que, una vez entrenada, la red neuronal puede inferir soluciones de forma casi
+instantánea, ya que no requiere volver a resolver el problema desde cero, sino que utiliza el
+conocimiento adquirido durante el entrenamiento para tomar decisiones rápidas y eficientes.\\
+
+Por tanto, aunque la optimización clásica es más rápida en términos de tiempo total de optimización,
+el agente DQN-LSTM es mucho más eficiente en términos de tiempo de inferencia, lo que lo hace
+más adecuado para aplicaciones en tiempo real donde se requiere una respuesta rápida y adaptativa.\\

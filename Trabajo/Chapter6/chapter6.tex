@@ -1,6 +1,48 @@
 \chapter{Conclusiones y Trabajo Futuro}
-En este trabajo se ha presentado un enfoque innovador para la gestión de la demanda energética en 
-el contexto de la creciente adopción de vehículos eléctricos (EV) y la integración de energías 
-renovables. A través del uso de Inteligencia Artificial Generativa, se han desarrollado modelos 
-capaces de predecir y optimizar el consumo energético, contribuyendo a una gestión más eficiente 
-y sostenible de los recursos energéticos.\\
+\section{Conclusiones}
+En este trabajo se ha presentado un sistema de predicción y gestión de la demanda energética para 
+la carga de vehículos eléctricos, utilizando un enfoque de modelado híbrido que combina técnicas 
+de aprendizaje automático y aprendizaje por refuerzo con memoria, basado en IA generativa.\\
+
+Tanto el optimizador clásico como el sistema de IA generativa han resultado eficaces para gestionar 
+la carga de vehículos eléctricos bajo las restricciones planteadas. El enfoque clásico, mediante 
+programación lineal, ha ofrecido soluciones óptimas en coste y eficiencia, respetando tanto los 
+límites técnicos como las preferencias del usuario. Por su parte, la IA generativa ha destacado por 
+su capacidad de adaptación ante escenarios variables, logrando minimizar costes y aprovechar al 
+máximo la energía disponible, siempre dentro de los requisitos establecidos.\\
+
+También se ha logrado generar perfiles sintéticos de demanda y disponibilidad de energía con la 
+ayuda de técnicas de IA Generativa, lo que ha permitido simular escenarios realistas para la carga 
+de vehículos eléctricos.
+
+Finalmente, tras un análisis comparativo de los resultados obtenidos por ambos enfoques, se ha
+concluido que, aunque el optimizador clásico garantiza soluciones óptimas bajo restricciones
+específicas, el sistema de IA generativa ofrece una mayor flexibilidad y adaptabilidad a cambios
+en las condiciones de carga y disponibilidad de energía. Esto lo convierte en una herramienta valiosa
+para la planificación y operación de sistemas energéticos cada vez más complejos, especialmente en
+el contexto de la movilidad eléctrica y la integración de energías renovables.\\
+
+\section{Próximos Pasos}
+Aunque el sistema desarrollado ha demostrado ser eficaz y cumple con los objetivos planteados,
+existen varias áreas de mejora y expansión que podrían explorarse en el futuro:
+\begin{itemize}
+    \item \textbf{Introducción de algoritmos de clustering:} Incorporar técnicas como 
+    \textit{k-means} \cite{lloyd1982kmeans} o \textit{k-nearest neighbors} \cite{altman1992knn} para 
+    identificar y clasificar perfiles de demanda y patrones de carga, permitiendo una gestión 
+    más personalizada y eficiente de los recursos energéticos.
+    \item \textbf{Mejora de la política de control mediante métodos Actor-Critic:} Implementar 
+    enfoques avanzados de aprendizaje por refuerzo, como métodos Actor-Critic o políticas de 
+    gradiente, que permitan asignar recompensas suaves (\textit{soft rewards}) en función de la 
+    dirección y calidad de las acciones tomadas por el sistema, facilitando un aprendizaje más fino 
+    y adaptativo.
+    \item \textbf{Capacidades predictivas avanzadas:} Integrar modelos de predicción para anticipar 
+    la demanda energética y la disponibilidad de recursos, mejorando la planificación y la toma de 
+    decisiones en tiempo real.
+    \item \textbf{Ampliación de la memoria y el \textit{replay buffer}:} Aumentar la capacidad de 
+    memoria del sistema, permitiendo el acceso a experiencias pasadas relevantes, como datos de 
+    fechas o situaciones similares de años anteriores, para enriquecer el aprendizaje y la toma de 
+    decisiones.
+    \item \textbf{Integración de energías renovables en el consumo no gestionable:} Considerar la 
+    aportación de fuentes renovables en la parte de la demanda no gestionable, incrementando la 
+    sostenibilidad y la eficiencia global del sistema.
+\end{itemize}

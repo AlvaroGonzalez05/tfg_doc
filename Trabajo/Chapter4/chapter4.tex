@@ -1,4 +1,5 @@
 \chapter{Caso de Estudio}
+\label{chapter:chapter4}
 \section{Generador de Perfiles Energéticos}
 El uso de los vehículos es particular al estilo de vida de cada usuario, tanto para vehículos de
 combustión como para vehículos eléctricos. Por ello, es necesario generar perfiles energéticos que
@@ -38,33 +39,51 @@ Los perfiles generados se han agrupado en las siguientes categorías, que repres
 distintos tipos de usuarios y sus hábitos de carga:
 \begin{table}[H]
     \centering
-    \begin{tabular}{p{2cm} p{7cm} p{3.5cm}}
+    \begin{tabular}{p{2cm} p{7.25cm} p{2.5cm} p{1.25cm}}
         \toprule
-        \textbf{Perfil} & \textbf{Hábitos de carga} & \textbf{Disponibilidad (probabilidad)} \\
+        \textbf{Perfil} & \textbf{Hábitos de carga} & \textbf{Horas} & \textbf{Prob.} \\
         \midrule
         Trabajador (\texttt{worker}) &
-        Carga principalmente de noche (00:00–06:00, 21:00–00:00); baja disponibilidad en horario laboral. &
-        00:00–06:00: 0.95; 06:00–21:00: 0.10; 21:00–00:00: 0.85 \\
+        Carga principalmente de noche; baja disponibilidad en horario laboral. &
+        00:00–06:00 \newline 06:00–21:00 \newline 21:00–00:00 &
+        0.95 \newline 0.10 \newline 0.85 \\
         \addlinespace[0.5ex]
         Flexible &
         Disponibilidad media y estable, con ligera bajada en horario laboral. &
-        00:00–08:00: 0.80; 08:00–18:00: 0.60; 18:00–00:00: 0.75 \\
+        00:00–08:00 \newline 08:00–18:00 \newline 18:00–00:00 &
+        0.80 \newline 0.60 \newline 0.75 \\
         \addlinespace[0.5ex]
         Jubilado (\texttt{retired}) &
         Alta disponibilidad todo el día, salvo ausencias puntuales a mediodía y tarde. &
-        00:00–12:00: 0.95; 12:00–16:00: 0.70; 16:00–00:00: 0.90 \\
+        00:00–12:00 \newline 12:00–16:00 \newline 16:00–00:00 &
+        0.95 \newline 0.70 \newline 0.90 \\
         \addlinespace[0.5ex]
         Viajero (\texttt{traveller}) &
         Alta disponibilidad salvo ausencias frecuentes en horario diurno y algunas tardes. &
-        00:00–08:00: 0.90; 08:00–18:00: 0.40; 18:00–00:00: 0.80 \\
+        00:00–08:00 \newline 08:00–18:00 \newline 18:00–00:00 &
+        0.90 \newline 0.40 \newline 0.80 \\
         \addlinespace[0.5ex]
         Nocturno (\texttt{night\_owl}) &
         Carga casi exclusiva por la noche; baja disponibilidad diurna. &
-        00:00–06:00: 0.98; 06:00–20:00: 0.15; 20:00–00:00: 0.90 \\
+        00:00–06:00 \newline 06:00–20:00 \newline 20:00–00:00 &
+        0.98 \newline 0.15 \newline 0.90 \\
         \bottomrule
     \end{tabular}
-    \caption{Perfiles energéticos generados para usuarios de EV y sus probabilidades de disponibilidad}
+    \caption{Perfiles energéticos generados para usuarios de EV, horas y probabilidades de disponibilidad}
 \end{table}
+
+\section{Precios de la Electricidad}
+Para el desarrollo del trabajo son esenciales los precios de la electricidad, que se han obtenido
+directamente de Red Eléctrica de España (REE)~\cite{pvpc_csv_2024}. Se han escogido los precios de 
+la electricidad para la península ibérica (PVPC) para el año 2021, ya que es muy reciente, está
+completo y coincide con los datos generado con LPG. A continuación se muestra un análisis de los 
+precios durante dicho año:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{images/preciosElectricidad.jpg}
+    \caption{Precios de la electricidad en España durante el año 2021. Fuente: Elaboración propia a partir de datos de REE.}
+    \label{fig:precios_electricidad}
+\end{figure}
 
 \section{Generador de Consumo}
 Este segundo bloque se centra en la tarea de generación de consumos energéticos domésticos,
@@ -203,13 +222,13 @@ consumo y carga del vehículo eléctrico. Además, permiten identificar los mome
 consumo energético, lo que es esencial para la gestión eficiente de la carga del EV.\\
 
 Más imágenes de las gráficas generadas por el LPG, y análisis propios, se pueden encontrar en el
-anexo~\ref{annex:annex1}.
+anexo~\ref{appendix:appendixA}.
 
 \section{Gestor de Carga de EVs}
 El gestor de carga es el tercer y último bloque del trabajo, y es realmente el foco del mismo. 
-Para su desarrollo, se ha implementado una red neuronal de aprendizaje por refuerzo DQN, que se ha 
-entrenado con los perfiles de consumo energético, obtenidos tras la generación de datos adicionales, 
-y toda la información de la vivienda y del vehículo eléctrico.\\
+Para su desarrollo, se ha implementado una red neuronal de aprendizaje por refuerzo DQN añadiendo 
+unas capas de LSTM, que se ha entrenado con los perfiles de consumo energético, obtenidos tras la 
+generación de datos adicionales; y toda la información de la vivienda y del vehículo eléctrico.\\
 
 El gestor de carga tiene como objetivo optimizar la carga del vehículo eléctrico, minimizando por 
 supuesto el coste incurrido en la carga, teniendo en cuenta las restricciones y requisitos del usuario. 
@@ -238,13 +257,14 @@ objetivos del problema de optimización. En este caso, las variables son las sig
 
 Una vez se tienen claras las variables, tras un análisis del problema, se definen las siguientes
 restricciones y función objetivo:
-\begin{align}
-    \min_{P(t)} \quad & \sum_{t} C(t) = \sum_{t} E(t) \cdot p(t) \label{eq:objective_cost} \\[6pt]
-    \text{s.a.} \quad & 0 \leq P(t) \leq P_{\text{max}} \cdot A(t) \label{eq:charging_window} \\[6pt]
-    & P(t) + P_{\text{NG}}(t) \leq P_{\text{red}} \label{eq:grid_limit} \\[6pt]
-    & SOC(t+1) = SOC(t) + \eta \cdot \frac{P(t) \cdot \Delta t}{\text{capacidad}} \label{eq:soc_update} \\[6pt]
-    & \sum_{t} P(t) \cdot \Delta t \geq (SOC_f - SOC_i) \cdot \text{capacidad} \label{eq:soc_requirement}
-\end{align}
+\begin{alignat}{3}
+    \min_{P(t)} \quad & \sum_{t} C(t) = \sum_{t} E(t) \cdot p(t) && \\
+    \text{s.a.} \quad 
+    & 0 \leq P(t) \leq P_{\text{max}} \cdot A(t) && \qquad \forall t \\
+    & P(t) + P_{\text{NG}}(t) \leq P_{\text{red}} && \qquad \forall t \\
+    & SOC(t+1) = SOC(t) + \eta \cdot \frac{P(t) \cdot \Delta t}{\text{capacidad}} && \qquad \forall t \\
+    & \sum_{t} P(t) \cdot \Delta t \geq (SOC_f - SOC_i) \cdot \text{capacidad} &&
+\end{alignat}
  
 Una vez ya se ha planteado el problema, se implementa el Python~\cite{python2024language}
 usando la librería \textit{Pyomo}~\cite{pyomo2024} para definir el modelo de optimización, y
@@ -256,9 +276,106 @@ Los resultados obtenidos con este algoritmo de optimización clásico sirven com
 comparar el rendimiento del gestor de carga basado en aprendizaje por refuerzo, y para evaluar la
 mejora en la eficiencia y reducción de costes que se puede lograr con el uso de técnicas del RL.\\ 
 
-Los resultados obtenidos con el algoritmo de optimización clásico se muestran a continuación:
+En la Figura~\ref{fig: classic_daily_profiles} se muestra el comportamiento diario del algoritmo de
+optimización clásico para el perfil \texttt{worker}, donde se observa la evolución de la potencia
+entregada al cargador y la evolución del estado de carga (SOC) del vehículo eléctrico a lo largo 
+del día. Por otro lado, en la Figura~\ref{fig: classic_global_profiles} se muestran las mismas 
+variables pero a lo largo de un mes entero, donde se puede observar las tendencuas de carga y
+consumo del vehículo eléctrico, así como la variabilidad en la potencia aplicada y el SOC a lo largo
+del mes.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/classic/daily_behavior_2021-03-21_worker.png}
+    \caption{Resultados del algoritmo de optimización clásico para el perfil \texttt{worker}: 
+    potencia aplicada y evolución del SOC en un día. Fuente: Elaboración propia.}
+    \label{fig: classic_daily_profiles}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/classic/global_july_classic_worker.png}
+    \caption{Resultados del algoritmo de optimización clásico para el perfil \texttt{worker}: 
+    potencia aplicada y evolución del SOC a lo largo de un mes. Fuente: Elaboración propia.}
+    \label{fig: classic_global_profiles}
+\end{figure}
 
-%%% INSERTAR RESULTADOS OBTENIDOS CON EL ALGORITMO DE OPTIMIZACIÓN CLÁSICO %%%
+En el análisis diario, se puede observar cómo el algoritmo de optimización clásico se adapta a las
+costumbres impuestas por el perfil de usuario, cargando mayoritariamente el EV durante la noche, y
+en momentos del día en los que el consumo energético es menor, y hay mayor probabilidad de que el 
+vehículo esté disponible para la carga. Además, se observa que el SOC del vehículo se mantiene
+dentro de los límites establecidos, y se carga de forma eficiente para minimizar el coste total de
+la carga.\\
+
+Durante el análisis mensual, la tendencia de carga del EV para este perfil se mantiene, cargando
+principalmente pronto durante la noche. Ocurre una cosa curiosa en el mes de julio en estos 
+resultados en particular, y es que el algoritmo no consigue encontrar una solución óptima para
+la carga del EV sobre el día 14 del mes.\\
+
+El mes representado no ha sido seleccionado de forma aleatoria, sino que se ha escogido un mes en 
+el que se puede observar uno de los principales riesgos de la gestión de la carga de EVs con un
+algoritmo de optimización clásico, y es que, si el perfil de consumo energético es muy variable,
+las condciones del EV cambian, o hay un cambio inesperado en cualquier campo, el algoritmo
+de optimización clásico no es capaz de adaptarse a esos cambios, y por tanto no consigue encontrar
+una solución óptima. Esto es un problema importante, ya que en la vida real, si el usuario se 
+encunetra en una situación similar, se encontraría completamente desprotegido y su vehículo sin
+cargar.\\
+
+Se muestra únicamente el perfil \texttt{worker} como ejemplo más representativo, ya que sería el
+perfil de consumo energético más habitual. Los resultados y visualizaciones adicionales tanto para
+este perfil como para los demás se pueden encontrar en el anexo~\ref{appendix:appendixA}.\\
+
+Siguiendo con los resultados de la optimización clásica, a continuación se presentan una serie de
+métricas y resultados adicionales obtenidos por el algoritmo de optimización clásico, que
+permiten evaluar su rendimiento y eficiencia en la gestión de la carga del vehículo eléctrico.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccc}
+        \textbf{Perfil} & $\overline{\text{Coste}}$ (EUR) & $\overline{\text{Energía}}$ (kWh) & Eficiencia(kWh/EUR) \\
+        \midrule
+        retired & 27.14  & 244.08 & 8.99 \\
+        night\_owl & 27.57  & 244.53 & 8.87 \\
+        flexible & 27.69  & 245.02 & 8.85 \\
+        traveller & 27.23  & 242.74 & 8.92 \\
+        worker & 27.35  & 244.08 & 8.92 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Resumen de métricas diarias por perfil para la optimización clásica.}
+    \label{tab:metrics_opt_classic_aligned}
+\end{table}
+
+En primer lugar, se puede apreciar la tremenda similitud entre los resultados obtenidos
+para los distintos perfiles de usuario, ya que todos ellos tienen un comportamiento muy similar
+en cuanto a la carga del vehículo eléctrico, aunque los perfiles son tremendamente distintos.\\
+
+Para empezar, el coste medio diario de la carga. Los valores obtenidos, siguiendo la tónica del 
+optimizador, se mantienen muy estables, con un coste total de carga de alrededor de 27.3 EUR por 
+día, con una eficiencia de carga de alrededor de 8.9 kWh por EUR. Esto indica que el algoritmo de 
+optimización clásico es capaz de gestionar la carga del vehículo eléctrico de forma eficiente, 
+minimizando el coste total de la carga, y adaptándose a las condiciones del mercado eléctrico y a 
+las restricciones del usuario.\\
+
+Además, la nergía media diaria cargada consigue mantener esta estabilidad a lo largo de los 
+distintos perfiles estudiados, con un valor medio de alrededor de 244 kWh por día. Naturalmente, por 
+cómo se ha modelado la batería del EV al principio de cada día, introduciendo una variabilidad
+aleatoria entre 3\% y 25\% de SOC, se puede observar que la energía total cargada varía ligeramente 
+entre los perfiles, pero se mantiene en un rango muy similar, al durar el estudio un año completo.\\
+
+Finalmente, la métrica llamada \textit{eficiencia} se ha calculado como la relación entre la energía
+cargada y el coste total de la carga, y se ha mantenido en torno a 8.9 kWh por EUR a lo largo de 
+todos los perfiles. Esta métrica es muy importante, ya que indica la eficiencia del algoritmo de 
+optimización clásico en la gestión de la carga del vehículo eléctrico, y su capacidad para 
+minimizar el coste total de la carga, al mismo tiempo que se asegura de que el vehículo esté
+cargado adecuadamente para cada situación.\\
+
+Por último, se han registrado los tiempos de ejecución del algoritmo de optimización clásica, tanto 
+para la resolución de cada perfil de usuario de forma individual como para el conjunto completo de 
+perfiles. Los resultados obtenidos son los siguientes:
+\begin{itemize}
+    \item \textbf{Tiempo acumulado resolviendo modelos individuales:} 0.57 segundos
+    \item \textbf{Tiempo total de optimización:} 8.05 segundos
+\end{itemize}
+
+Estos valores reflejan la eficiencia computacional del enfoque clásico, permitiendo resolver el 
+problema de optimización en tiempos muy reducidos incluso para múltiples perfiles.
 
 \subsection{Red Neuronal de Aprendizaje por Refuerzo}
 Para la implementación del gestor, se ha usado una red neuronal de aprendizaje por refuerzo DQN-LSTM, 
@@ -274,8 +391,8 @@ temporal y generar una salida final. La arquitectura se compone de los siguiente
 \begin{itemize}
     \item \textbf{Capa LSTM}: Una capa tipo LSTM (\texttt{nn.LSTM}) que permite procesar secuencias 
     de datos temporales, aprendiendo relaciones a lo largo del tiempo. Toma como entrada el tamaño 
-    de los vectores (\texttt{input\_dim}), el tamaño del estado oculto (\texttt{hidden\_dim}) y el 
-    número de capas apiladas (\texttt{lstm\_layers}, por defecto serán 2).
+    de los vectores (\texttt{input\_dim}), el tamaño del estado oculto (\texttt{hidden\_dim}, por 
+    defecto 128) y el número de capas apiladas (\texttt{lstm\_layers}, por defecto serán 2).
     
     \item \textbf{Normalización de capa}: Después de la LSTM, se aplica una normalización 
     (\texttt{nn.LayerNorm}) para estabilizar el entrenamiento y mejorar la convergencia del modelo.
@@ -300,7 +417,7 @@ temporal y generar una salida final. La arquitectura se compone de los siguiente
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/gestor_arch.png}
+    \includegraphics[width=0.65\textwidth]{images/gestor_arch.png}
     \caption{Arquitectura de la red neuronal DQN utilizada en el gestor de carga. Fuente: 
     Elaboración propia.}
     \label{fig:arch_dqn}
@@ -313,58 +430,75 @@ eléctrico, y tiene en cuenta tanto el consumo energético no gestionable como l
 EV y el precio de la electricidad en cada intervalo de tiempo.
 
 \paragraph{Estado del entorno.}
-El vector de estado \(\mathbf{s}_t \in \mathbb{R}^5\) en cada instante \(t\) incluye las siguientes 
+El vector de estado \(\mathbf{s}_t \in \mathbb{R}^8\) en cada instante \(t\) incluye las siguientes 
 variables:
 \begin{itemize}
-    \item \textbf{State of Charge (SOC):} estado de carga actual del vehículo eléctrico.
-    \item \textbf{Hora normalizada:} instante del día en formato continuo \([0, 1]\).
+    \item \textbf{State of Charge (SOC):} estado de carga actual del vehículo eléctrico, expresado 
+    en kWh.
+    \item \textbf{SOC objetivo:} nivel de carga deseado, también en kWh.
+    \item \textbf{Hora normalizada:} instante del día en formato continuo \([-1, 1]\).
     \item \textbf{Consumo no gestionable (\(P_{NG}\)):} potencia usada por la vivienda que no se 
     puede desplazar.
     \item \textbf{Disponibilidad (\(A_t\)):} probabilidad de que el vehículo esté conectado en ese 
     instante.
     \item \textbf{Precio de la electricidad:} coste por kWh en el instante actual.
+    \item \textbf{Media del precio de la electricidad:} media del precio de la electricidad en el 
+    pasado reciente.
+    \item \textbf{Desviación del precio de la electricidad:} diferencia entre el precio actual y su 
+    media reciente, indicando si está por encima o por debajo del precio habitual.
 \end{itemize}
 
 \paragraph{Acciones.} 
-La acción es binaria \(a_t \in \{0, 1\}\), indicando si se decide cargar (1) o no cargar (0) 
-durante el intervalo actual de 15 minutos.
+La acción es binaria \(a_t \in \{0, 1\}\), indicando si se decide cargar (1) o no cargar (0) durante 
+el intervalo actual de 15 minutos.
 
 \paragraph{Dinámica.} 
 Dado un estado y una acción, se debe calcular el nuevo estado del entorno, que desencadena dicha 
-accion. Esto significa que el entorno debe calcular:
+acción. Esto significa que el entorno debe calcular:
 \begin{itemize}
     \item La potencia solicitada \(P = a_t \cdot P_{\text{max}}\).
     \item La energía cargada, ajustada a las restricciones físicas y de disponibilidad.
-    \item La actualización del SOC: 
-    \(\Delta SOC = P \cdot \Delta t\), con \(\Delta t = 0{,}25~\text{h}\).
+    \item La actualización del SOC: \(\Delta SOC = P \cdot \Delta t\), con 
+    \(\Delta t = 0{,}25~\text{h}\).
     \item El coste de la carga en ese instante: \(C_t = P \cdot p(t)\).
     \item La recompensa obtenida, que depende de la acción tomada y del estado del entorno.
 \end{itemize}
 
 \paragraph{Función de recompensa.} 
-La recompensa está diseñada para reflejar los objetivos del sistema: minimizar el coste energético, 
-evitar violaciones de restricciones físicas, y alcanzar el SOC deseado al final del día. Se 
-penaliza explícitamente el uso de energía cuando el vehículo no está disponible o cuando se supera 
-el margen permitido por la potencia contratada. Por tanto, se penalizará al agente en los siguientes
-casos:
+La función de recompensa implementada tiene como objetivo guiar al agente hacia un comportamiento 
+eficiente, seguro y económicamente óptimo. Para ello, combina penalizaciones por violar 
+restricciones físicas o económicas, y recompensas por decisiones adecuadas en función del contexto 
+del entorno. Esta función es una traducción literal de las restricciones impuestas en el 
+optimizador clásico visto anteriormente.\\
+
+En primer lugar, se penaliza el coste económico de la carga en cada instante de tiempo, calculado 
+como \( C_t = P \cdot p(t) \), donde \(P\) es la potencia aplicada y \(p(t)\) el precio de la 
+electricidad en el instante \(t\). Esta penalización incentiva al agente a cargar en momentos más 
+baratos.\\
+
+Además, se penaliza al agente en tres casos clave:
 \begin{itemize}
-    \item Coste de la electricidad en ese instante.
-    \item Cargar cuando el vehículo no está disponible (\(A_t \approx 0\)).
-    \item Superar la potencia contratada (\(P > P_{\text{red}} - P_{NG}\)).
-    \item Exceder el SOC máximo deseado, si la batería ya se ha cargado a ese nivel.
+    \item Cuando intenta cargar sin disponibilidad del vehículo (\(A_t = 0\)), se reduce la 
+    recompensa con la energía desaprovechada.
+    \item Cuando la potencia solicitada supera el margen disponible contratado con la red: \( P > P_{\text{red}} - P_{NG} \), 
+    en cuyo caso se corrige la acción y se aplica de nuevo una penalización con el exceso.
+    \item Cuando el SOC supera el valor objetivo fijado, o si se excede la capacidad de la batería.
+    En este caso, se penaliza con lo que habría sido el coste incurrido en esta carga superflua.
 \end{itemize}
 
-Adicionalmente, se recompensa positivamente al agente si el SOC final se encuentra en el rango 
-deseado (\([0{,}75;0{,}8]\), por ejemplo) al término del episodio. Pr tanto, la función de 
-recompensa \(R_t\) se puede expresar maremáticamente como:
-\begin{equation}
-    r_t = -\left( C_t + \lambda_1 \cdot A_t + \lambda_2 \cdot (P - P_{\text{red}} + P_{NG})^2 +
-    \lambda_3 \cdot (SOC - SOC_{\text{max}})^2 \right)
-\end{equation}
+Por otro lado, se añaden incentivos positivos en los siguientes casos:
+\begin{itemize}
+    \item Si el vehículo alcanza el SOC objetivo al final del día, se otorga una recompensa 
+    adicional muy significativa (\(+50\)) para fomentar la planificación de largo plazo.
+    \item Si se carga cuando la disponibilidad es alta y el SOC aún no ha alcanzado el objetivo, 
+    se otorga una pequeña recompensa positiva para favorecer la acción oportuna.
+    \item Toda energía cargada que se acerque al SOC deseado se premia con una recompensa 
+    proporcional.
+\end{itemize}
 
-donde \(\lambda_1\), \(\lambda_2\) y \(\lambda_3\) son coeficientes de ponderación que ajustan la
-importancia de cada componente de la recompensa. El coste \(C_t\) se calcula como el producto 
-de la potencia entregada \(P\) y el precio de la electricidad \(p(t)\) en el instante \(t\).
+Finalmente, se penaliza ligeramente el hecho de no cargar cuando el vehículo está disponible y el 
+SOC aún no ha alcanzado su nivel deseado. Esta penalización está diseñada para evitar que el 
+agente se comporte demasiado conservador y desaproveche oportunidades de carga viables.\\
 
 \paragraph{Formato del episodio.}  
 Cada episodio simula un día completo dividido en intervalos de 15 minutos (96 pasos). El SOC se 
@@ -379,7 +513,7 @@ dos valores, que serían la acción de cargar o no cargar el vehículo en el int
 \paragraph{Representación temporal.}  
 Para aportar contexto al momento de la carga, la disponibilidad y precio, de manera que no sea un 
 análisis puntual de la situación, se utiliza una secuencia de entrada temporal de longitud 
-\(T = 4\) pasos (1 hora), alimentada a través de la capa LSTM.
+\(T = 8\) pasos (2 horas), alimentada a través de la capa LSTM.
 
 \paragraph{Parámetros del entrenamiento.}  
 El entrenamiento se realiza durante \(N = 365\) episodios completos (días), con los siguientes 
@@ -389,17 +523,33 @@ hiperparámetros base:
     \item \textbf{Factor de descuento (\(\gamma\))}: 0.95
     \item \textbf{Exploración inicial (\(\epsilon\))}: 0.1, decreciendo progresivamente
     \item \textbf{Tamaño del batch}: 64
-    \item \textbf{Tamaño de la secuencia temporal}: 4 pasos
+    \item \textbf{Tamaño de la secuencia temporal}: 8 pasos
     \item \textbf{Tamaño del buffer de experiencia}: 10000
 \end{itemize}
 
-Para la elección de los valores de estos hiperparámetros, se ha realizado una algoritmo de 
+Para la elección de los valores de estos hiperparámetros, se ha realizado un algoritmo de 
 \textit{Grid Search} sobre un rango de valores, y se ha seleccionado el conjunto que mejor 
-rendimiento ha obtenido en términos de recompensa media acumulada y estabilidad del aprendizaje.
+rendimiento ha obtenido en términos de recompensa media acumulada y estabilidad del aprendizaje.\\
+
+Además, se emplea una política \(\epsilon\)-greedy, en la que el agente escoge acciones aleatorias 
+con probabilidad \(\epsilon\) y sigue la política aprendida con probabilidad  \(1 - \epsilon\). El 
+valor inicial de \(\epsilon\) se fija en 0.1, y se reduce progresivamente a lo largo de los 
+episodios mediante una estrategia de decaimiento exponencial:
+
+\begin{equation}
+    \epsilon_t = \epsilon_{\text{min}} + (\epsilon_{\text{start}} - \epsilon_{\text{min}}) \cdot 
+    e^{-\kappa t}
+\end{equation}
+
+con \(\epsilon_{\text{start}} = 0.1\), \(\epsilon_{\text{min}} = 0.05\), \(\kappa\)  una 
+constante de decaimiento, y \(t\) el número de episodios transcurridos. Con esta estrategia, se 
+busca que el agente sea mucho más "curioso" al comenzar el entrenamiento, explorando más 
+posibilidades en el espacio de acciones, y vaya convergiendo progresivamente hacia las mejores 
+políticas.
 
 \paragraph{Algoritmo.}  
-Se emplea el algoritmo clásico de \textit{Deep Q-Learning} con \textit{replay buffer}, que incluye
-actualizaciones periódicas de la red objetivo, y política \(\epsilon\)-greedy. El error se calcula 
+Se emplea el algoritmo clásico de \textit{Deep Q-Learning} con \textit{replay buffer}, que incluye 
+actualizaciones periódicas de la red objetivo y política \(\epsilon\)-greedy. El error se calcula 
 mediante pérdida MSE (\textit{Mean Squared Error}, Error Cuadrático Medio) entre la estimación del 
 valor actual y el objetivo de Bellman, tal y como se ha presentado en el Capítulo~\ref{chapter:chapter2}.
 
@@ -411,3 +561,106 @@ el comportamiento del agente en detalle.
 
 \subsubsection{Resultados del Agente DQN-LSTM.}
 Los resultados obtenidos por el agente gestor, después del entrenamiento, se muestran a continuación.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/dqnlstm/daily_behavior_2021-03-21_worker.png}
+    \caption{Resultados del agente DQN-LSTM para el perfil \texttt{worker}: potencia aplicada y 
+    evolución del SOC en un día. Fuente: Elaboración propia.}
+    \label{fig:dqn_daily_profiles}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/dqnlstm/worker_monthly_behavior_july_bold.png}
+    \caption{Resultados del agente DQN-LSTM para el perfil \texttt{worker}: potencia aplicada y 
+    evolución del SOC a lo largo de un mes. Fuente: Elaboración propia.}
+    \label{fig:dqn_global_profiles}
+\end{figure}
+
+Igual que con el optimizador clásico, la Figura~\ref{fig:dqn_daily_profiles} muestra el
+comportamiento diario del agente gestor para el perfil \texttt{worker}, donde se observa la
+evolución de la potencia entregada al cargador y la evolución del estado de carga (SOC) del
+vehículo eléctrico a lo largo del día. Por otro lado, la Figura~\ref{fig:dqn_global_profiles}
+muestra las mismas variables pero a lo largo de un mes entero, donde se puede observar las
+tendencias de carga y consumo del vehículo eléctrico a lo largo de todo el mes.\\
+
+La red neuronal DQN-LSTM ha aprendido a gestionar la carga del vehículo eléctrico de forma
+eficiente, adaptándose a las condiciones del entorno y optimizando el coste de la carga. La 
+intencionalidad de la carga es aparente en ambas gráficas, ya que el gestor ha entendido qué 
+momentos del día son los más adecuados para cargar el EV, teniendo en cuenta la variabilidad de la 
+disponibilidad del propio vehículo para la carga, el precio de la electricidad, y demás variables
+del entorno.\\
+
+Los incentivos de carga implanatados en el entorno, al igual que los "castigos" por mostrar 
+comportamientos no deseados o subóptimos, han ayudado al agente a tomar mejores decisiones, y más
+informadas a lo largo del tiempo. Por ejemplo, se puede observar cómo el agente ha aprendido a
+cargar el vehículo eléctrico durante la noche, cuando la disponibilidad es alta y el precio de la
+electricidad es más bajo, y a evitar cargar durante el día, en los intervalos en que el consumo 
+energético sería más costoso para el cliente.\\
+
+Además, se puede observar el funcionamiento de las restricciones impuestas en el entorno, si se 
+presta atención a la potencia entregada al cargador durante el día, concretamente sobre las 12-13h, 
+donde el agente gestor ha moderado la potencia entregada al cargador, ya que el consumo energético 
+de la vivienda es más alto, y por tanto, la potencia disponible para cargar el vehículo eléctrico 
+es menor.\\
+
+Con una vista mensual, a medio plazo, el comportamiento estable y positivo de la red se mantiene y
+se pone de manifiesto. La tendencia de carga del EV para este perfil se mantiene, cargando pronto
+e intentando llegar al SOC objetivo - el 80\% de la capacidad de la batería, por diseño - antes de
+que termine el día. Además, se observa que el agente gestor ha aprendido a adaptarse a las
+variaciones del precio de la electricidad, cargando en los momentos más económicos y evitando
+cargas innecesarias en momentos de precios altos.\\
+
+De nuevo, como con el optimizador clásico, se muestra únicamente el perfil \texttt{worker} como
+ejemplo más representativo, ya que sería el perfil de consumo energético más habitual. Los
+resultados y visualizaciones adicionales tanto para este perfil como para los demás se pueden
+encontrar en el anexo~\ref{appendix:appendixA}.\\
+
+Finalmente, se han extraído métricas y resultados adicionales obtenidos tras el entrenamiento y 
+pruebas del agente gestor, para evaluar su rendimiento en la gestión de la carga del vehículo
+léctrico. Estos resultados se muestran a continuación:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lccc}
+            \textbf{Perfil} & $\overline{\text{Coste}}$ (EUR) & $\overline{\text{Energía}}$ (kWh) & Eficiencia(kWh/EUR) \\
+        \midrule
+        worker      & 5,04  & 209,68 & 41,63 \\
+        flexible    & 2,93  & 120,07 & 40,33 \\
+        retired     & 1,64  & 63,28  & 37,14 \\
+        traveller   & 7,09  & 325,07 & 45,93 \\
+        night\_owl  & 6,21  & 268,06 & 43,07 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Resumen de métricas diarias por perfil para el agente DQN-LSTM.}
+    \label{tab:metrics_dqn_summary}
+\end{table}
+
+El rendimiento computacional de la red también ha sido registrado durante el entrenamiento y las 
+pruebas, y los tiempos obtenidos son los siguientes:
+\subsubsection{Métricas computacionales}
+A continuación se presentan los tiempos de entrenamiento e inferencia obtenidos para cada perfil durante el entrenamiento y pruebas del agente DQN-LSTM:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Perfil} & \textbf{Tiempo total train (min)} & \textbf{\(\overline{\text{Tiempo de inferencia}}\) (ms)} \\
+        \midrule
+        worker      & 3.98 & 0.174 \\
+        flexible    & 4.39 & 0.294 \\
+        retired     & 4.29 & 0.301 \\
+        traveller   & 4.45 & 0.309 \\
+        night\_owl  & 4.37 & 0.306 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Tiempos de entrenamiento e inferencia por perfil para el agente DQN-LSTM.}
+\end{table}
+
+El tiempo medio de entrenamiento por perfil es relativamente bajo, 4.17 minutos por perfil, lo que 
+indica que el agente DQN-LSTM es capaz de aprender de forma eficiente a partir de los datos 
+recibidos. Además, y más importante aún, el tiempo medio de inferencia es muy bajo, con una media 
+de 0.252 milisegundos por perfil, alcanzando un mínimo de tan solo 174 milisegundos de media si el perfil es 
+\texttt{worker}. Esto indica que el agente es capaz de tomar decisiones en tiempo real, lo que es 
+esencial para la gestión eficiente de la carga del vehículo eléctrico.\\
+
+Además, con unos tiempos de inferencia tan reducidos, una posible implementación en hardware de 
+este gestor no requeriría de mucha potencia computacional, sino tan solo para el entrenamiento.

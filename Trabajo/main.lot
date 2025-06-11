@@ -1,0 +1,23 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pequeña muestra de los datos del dataset \textit {Electric Vehicle Charging Patterns}.}}{8}{table.caption.6}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Fortalezas y debilidades de las GANs}}{18}{table.caption.17}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Fortalezas y debilidades de los VAEs}}{18}{table.caption.18}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Fortalezas y debilidades de los Modelos de Difusión}}{19}{table.caption.19}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Fortalezas y debilidades de los Modelos Fundacionales}}{19}{table.caption.20}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Clasificación de las distintas aplicaciones. Siendo los números en la segunda columna cada una de las técnicas por orden: (1) GANs, (2) VAEs, (3) Modelos de difusión, (4) Modelos fundacionales.}}{20}{table.caption.21}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Perfiles energéticos generados para usuarios de EV, horas y probabilidades de disponibilidad}}{24}{table.caption.23}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parámetros de configuración de la vivienda en LPG}}{26}{table.caption.25}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Categorías de consumo energético simuladas}}{27}{table.caption.26}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Resumen de métricas diarias por perfil para la optimización clásica.}}{32}{table.caption.31}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Resumen de métricas diarias por perfil para el agente DQN-LSTM.}}{41}{table.caption.47}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Tiempos de entrenamiento e inferencia por perfil para el agente DQN-LSTM.}}{41}{table.caption.49}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparativa de costes medios diarios por perfil entre la optimización clásica y el agente DQN-LSTM, junto con el porcentaje de reducción de coste.}}{44}{table.caption.50}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparativa de energía media diaria por perfil entre la optimización clásica y el agente DQN-LSTM, junto con el porcentaje de reducción de consumo energético.}}{45}{table.caption.51}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparativa de la eficiencia diaria (kWh/EUR) por perfil entre la optimización clásica y el agente DQN-LSTM, junto con el porcentaje de mejora en eficiencia.}}{47}{table.caption.52}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparativa de tiempos de entrenamiento/optimización total y de inferencia/decisión por perfil y método. Para la optimización clásica, el tiempo total corresponde al tiempo total de optimización (8.05 s $\approx $ 0.13 min) y el tiempo de inferencia al tiempo resolviendo modelos individuales (0.57 s / 60 $\approx $ 9.50 ms por perfil).}}{48}{table.caption.53}%
+\addvspace {10\p@ }

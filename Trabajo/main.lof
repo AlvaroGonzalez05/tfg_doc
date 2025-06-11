@@ -1,0 +1,22 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Evolución del interés por los vehículos eléctricos en España (2015-2025). Fuente: Google Trends~\blx@tocontentsinit {0}\cite {googletrends2025}}}{2}{figure.caption.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Logo de LPG. Fuente: \textit {LoadProfileGenerator}~\blx@tocontentsinit {0}\cite {pflugradt2020loadprofile}.}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Capturas de pantalla de LPG, página principal. Fuente: \textit {LoadProfileGenerator}~\blx@tocontentsinit {0}\cite {lpg_screenshots_2025}.}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Capturas de pantalla de LPG, obtención de resultados. Fuente: \textit {LoadProfileGenerator}~\blx@tocontentsinit {0}\cite {lpg_screenshots_2025}.}}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Logo de DeepMind. Fuente: DeepMind \blx@tocontentsinit {0}\cite {deepmind2025website}.}}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Arquitectura general de una Deep Q-Network (DQN). Fuente: Deep Q-Learning (DQN) \blx@tocontentsinit {0}\cite {amin2020dqn}.}}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Diagrama LSTM. Fuente: \textit {An Intuitive Explanation of LSTM}~\blx@tocontentsinit {0}\cite {calzone2020lstm}.}}{17}{figure.caption.16}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Metodología utilizada en el trabajo. Fuente: Elaboración propia.}}{21}{figure.caption.22}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Precios de la electricidad en España durante el año 2021. Fuente: Elaboración propia a partir de datos de REE.}}{25}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gráficas generadas por el LPG.}}{28}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultados del algoritmo de optimización clásico para el perfil \texttt {worker}: potencia aplicada y evolución del SOC en un día. Fuente: Elaboración propia.}}{31}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultados del algoritmo de optimización clásico para el perfil \texttt {worker}: potencia aplicada y evolución del SOC a lo largo de un mes. Fuente: Elaboración propia.}}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Arquitectura de la red neuronal DQN utilizada en el gestor de carga. Fuente: Elaboración propia.}}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultados del agente DQN-LSTM para el perfil \texttt {worker}: potencia aplicada y evolución del SOC en un día. Fuente: Elaboración propia.}}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Resultados del agente DQN-LSTM para el perfil \texttt {worker}: potencia aplicada y evolución del SOC a lo largo de un mes. Fuente: Elaboración propia.}}{39}{figure.caption.46}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

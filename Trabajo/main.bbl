@@ -868,6 +868,95 @@
       \field{pages}{8024\bibrangedash 8035}
       \range{pages}{12}
     \endentry
+    \entry{pvpc_csv_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=dda7e1c7aa59d437399b1dc5ecbd50d7}{%
+           family={España},
+           familyi={E\bibinitperiod},
+           given={Red\bibnamedelima Eléctrica},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{fullhash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{fullhashraw}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{bibnamehash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{authorbibnamehash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{authornamehash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{authorfullhash}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \strng{authorfullhashraw}{dda7e1c7aa59d437399b1dc5ecbd50d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.esios.ree.es/}}
+      \field{note}{Fichero descargado el 31 de mayo de 2025, correspondiente a datos de facturación eléctrica del mercado regulado español PVPC.}
+      \field{title}{Término de facturación de energía activa del PVPC 2.0TD (exportación CSV)}
+      \field{year}{2024}
+    \endentry
+    \entry{lloyd1982kmeans}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=876f8afa1045b9ae3db2a8af93dda664}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Stuart\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{fullhash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{fullhashraw}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{bibnamehash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{authorbibnamehash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{authornamehash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{authorfullhash}{876f8afa1045b9ae3db2a8af93dda664}
+      \strng{authorfullhashraw}{876f8afa1045b9ae3db2a8af93dda664}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{2}
+      \field{title}{Least squares quantization in PCM}
+      \field{volume}{28}
+      \field{year}{1982}
+      \field{pages}{129\bibrangedash 137}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TIT.1982.1056489
+      \endverb
+    \endentry
+    \entry{altman1992knn}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f116981e0e1a43739591c17fead31ad}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={Naomi\bibnamedelima S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{fullhash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{fullhashraw}{8f116981e0e1a43739591c17fead31ad}
+      \strng{bibnamehash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{authorbibnamehash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{authornamehash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{authorfullhash}{8f116981e0e1a43739591c17fead31ad}
+      \strng{authorfullhashraw}{8f116981e0e1a43739591c17fead31ad}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{3}
+      \field{title}{An Introduction to Kernel and Nearest-Neighbor Nonparametric Regression}
+      \field{volume}{46}
+      \field{year}{1992}
+      \field{pages}{175\bibrangedash 185}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1080/00031305.1992.10475879
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
